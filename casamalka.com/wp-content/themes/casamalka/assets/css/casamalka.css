@@ -1,0 +1,5376 @@
+@charset "UTF-8";
+
+a,
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+figure,
+img,
+picture {
+  user-select: none;
+  display: block;
+}
+
+.lb,
+.rlb code {
+  white-space: pre-line;
+}
+
+.dt,
+.h2:not(.gimlet) {
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+.h2.gimlet,
+.h3,
+.h4 {
+  font-family: GimletDisplayCompressed;
+}
+
+.button,
+body {
+  color: var(--black);
+}
+
+body.cart section#cart,
+body.form-drawer section.drawer.form-drawer.active,
+section {
+  pointer-events: auto;
+}
+
+div.card section,
+section#tequila-cta div.container,
+section.statement#homepage-statement div.container {
+  min-height: calc(var(--vhF100) - var(--header));
+}
+
+code.device,
+section#cart #cart-container ul#cart-items li.template {
+  display: none;
+}
+
+*,
+.splide__slide {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.splide__pagination__page:hover,
+.splide__toggle,
+a,
+button {
+  cursor: pointer;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+big,
+blockquote,
+body,
+button,
+caption,
+cite,
+code,
+dd,
+del,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+iframe,
+img,
+input,
+ins,
+kbd,
+label,
+legend,
+li,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+s,
+samp,
+section,
+select,
+small,
+span,
+strike,
+strong,
+sub,
+sup,
+table,
+tbody,
+td,
+textarea,
+tfoot,
+th,
+thead,
+tr,
+tt,
+ul,
+var {
+  border: 0;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  background: #fff;
+  line-height: 1;
+  font-family: AzeretMono;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.4s 0.1s;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption,
+section.recipes h1 reveal-outer:first-child,
+td,
+th {
+  text-align: left;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: 0 0;
+}
+
+header,
+section#age-gate {
+  background: var(--white);
+}
+
+:focus {
+  outline: 0;
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -webkit-text-size-adjust: 100%;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill::first-line,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+  transition: background-color 5000s !important;
+  -webkit-text-fill-color: var(--form-foreground) !important;
+}
+
+header.splash-animation,
+header.splash-animation div.container> :not(a),
+section#age-gate.accept figure {
+  transition: opacity 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+html {
+  min-height: calc(var(--vhF100) + 1px);
+  scroll-behavior: initial;
+  scrollbar-width: none;
+  font-size: var(--rem-base);
+}
+
+div.page {
+  min-height: var(--vhF100);
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  z-index: 3;
+  padding-top: var(--header);
+}
+
+section:not(.fw) {
+  margin: 0 auto;
+  width: var(--vw100);
+}
+
+section.fw {
+  width: var(--vwx100);
+}
+
+section.fw .maxw {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--vw100);
+}
+
+body:not(.safari) {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+body:not(.safari) #scrollWrapper {
+  height: var(--vhF100);
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+}
+
+body:not(.safari) #scrollContent,
+section.recipes h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  position: relative;
+  z-index: 3;
+}
+
+.container {
+  position: relative;
+  --padding-margin: var(--margin);
+}
+
+.container.height {
+  min-height: 100%;
+}
+
+.container:not(.c-margin) {
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  --padding-top: 0;
+  --padding-bottom: var(--padding-top);
+  --padding-right: var(--padding-margin);
+  --padding-left: var(--padding-margin);
+}
+
+.container.c-margin {
+  margin-left: var(--padding-margin);
+  margin-right: var(--padding-margin);
+}
+
+.margins {
+  padding-left: var(--margin);
+  padding-right: var(--margin);
+}
+
+code.device {
+  height: 1px;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 1px;
+  width: 1px;
+}
+
+:root {
+  --vw: min(1vw, 22px);
+  --vh: 1vh;
+  --vvh: 1vh;
+  --vh_fixed: 1vh;
+  --grid: calc((var(--vw) * 100) - (var(--margin) * 2));
+  ---margin: calc(var(--margin) * -1);
+  --col: calc((var(--grid) + var(--gutter)) / var(--columns));
+  --vh100: calc(var(--vh) * 100);
+  --vvh100: calc(var(--vvh) * 100);
+  --vhF100: calc(var(--vh) * 100);
+  --vw100: calc(var(--vw) * 100);
+  --col1: calc((var(--col) * 1));
+  --col1-g: calc(var(--col1) - var(--gutter));
+  --col1g: calc(var(--col1) + var(--gutter));
+  --col2: calc((var(--col) * 2));
+  --col2-g: calc(var(--col2) - var(--gutter));
+  --col2g: calc(var(--col2) + var(--gutter));
+  --col3: calc((var(--col) * 3));
+  --col3-g: calc(var(--col3) - var(--gutter));
+  --col3g: calc(var(--col3) + var(--gutter));
+  --col4: calc((var(--col) * 4));
+  --col4-g: calc(var(--col4) - var(--gutter));
+  --col4g: calc(var(--col4) + var(--gutter));
+  --col5: calc((var(--col) * 5));
+  --col5-g: calc(var(--col5) - var(--gutter));
+  --col5g: calc(var(--col5) + var(--gutter));
+  --col6: calc((var(--col) * 6));
+  --col6-g: calc(var(--col6) - var(--gutter));
+  --col6g: calc(var(--col6) + var(--gutter));
+  --col7: calc((var(--col) * 7));
+  --col7-g: calc(var(--col7) - var(--gutter));
+  --col7g: calc(var(--col7) + var(--gutter));
+  --col8: calc((var(--col) * 8));
+  --col8-g: calc(var(--col8) - var(--gutter));
+  --col8g: calc(var(--col8) + var(--gutter));
+  --col9: calc((var(--col) * 9));
+  --col9-g: calc(var(--col9) - var(--gutter));
+  --col9g: calc(var(--col9) + var(--gutter));
+  --col10: calc((var(--col) * 10));
+  --col10-g: calc(var(--col10) - var(--gutter));
+  --col10g: calc(var(--col10) + var(--gutter));
+  --col11: calc((var(--col) * 11));
+  --col11-g: calc(var(--col11) - var(--gutter));
+  --col11g: calc(var(--col11) + var(--gutter));
+  --col12: calc((var(--col) * 12));
+  --col12-g: calc(var(--col12) - var(--gutter));
+  --col12g: calc(var(--col12) + var(--gutter));
+  --col13: calc((var(--col) * 13));
+  --col13-g: calc(var(--col13) - var(--gutter));
+  --col13g: calc(var(--col13) + var(--gutter));
+  --col14: calc((var(--col) * 14));
+  --col14-g: calc(var(--col14) - var(--gutter));
+  --col14g: calc(var(--col14) + var(--gutter));
+  --col15: calc((var(--col) * 15));
+  --col15-g: calc(var(--col15) - var(--gutter));
+  --col15g: calc(var(--col15) + var(--gutter));
+  --col16: calc((var(--col) * 16));
+  --col16-g: calc(var(--col16) - var(--gutter));
+  --col16g: calc(var(--col16) + var(--gutter));
+  --col17: calc((var(--col) * 17));
+  --col17-g: calc(var(--col17) - var(--gutter));
+  --col17g: calc(var(--col17) + var(--gutter));
+  --col18: calc((var(--col) * 18));
+  --col18-g: calc(var(--col18) - var(--gutter));
+  --col18g: calc(var(--col18) + var(--gutter));
+  --col19: calc((var(--col) * 19));
+  --col19-g: calc(var(--col19) - var(--gutter));
+  --col19g: calc(var(--col19) + var(--gutter));
+  --col20: calc((var(--col) * 20));
+  --col20-g: calc(var(--col20) - var(--gutter));
+  --col20g: calc(var(--col20) + var(--gutter));
+  --col21: calc((var(--col) * 21));
+  --col21-g: calc(var(--col21) - var(--gutter));
+  --col21g: calc(var(--col21) + var(--gutter));
+  --col22: calc((var(--col) * 22));
+  --col22-g: calc(var(--col22) - var(--gutter));
+  --col22g: calc(var(--col22) + var(--gutter));
+  --col23: calc((var(--col) * 23));
+  --col23-g: calc(var(--col23) - var(--gutter));
+  --col23g: calc(var(--col23) + var(--gutter));
+  --col24: calc((var(--col) * 24));
+  --col24-g: calc(var(--col24) - var(--gutter));
+  --col24g: calc(var(--col24) + var(--gutter));
+  --rem-base: 62.5%;
+  --black: #000;
+  --white: #fff;
+  --cream: #fef9f3;
+  --lightgrey: #f3f3f1;
+  --darkgrey: #585858;
+  --border: #cbcbcb;
+  --midgrey: #ddd;
+  --h1-line-height: calc(var(--h1) * 0.84);
+}
+
+@supports (-webkit-touch-callout: none) {
+  #_touch {
+    display: block;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024.9px) {
+  #_tablet {
+    display: block;
+  }
+
+  @supports not (-webkit-touch-callout: none) {
+    a[href^="tel"] {
+      pointer-events: none;
+    }
+  }
+}
+
+@media all and (min-width: 1025px) {
+  #_laptop_desktop {
+    display: block;
+  }
+
+  a[href^="tel"] {
+    pointer-events: none;
+  }
+
+  @supports not (-webkit-touch-callout: none) {
+    #_laptop_desktop_notouch {
+      display: block;
+    }
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1439.9px) {
+  #_laptop {
+    display: block;
+  }
+}
+
+@media all and (min-width: 1439px) {
+  #_desktop {
+    display: block;
+  }
+}
+
+.busy,
+.busy *,
+body.transition #main,
+body.transition #main * {
+  pointer-events: none !important;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe,
+header.splash div.container {
+  pointer-events: none;
+}
+
+figure,
+picture {
+  position: relative;
+}
+
+figure figcaption {
+  user-select: text;
+}
+
+figure img {
+  pointer-events: none;
+  width: 100%;
+}
+
+figure div,
+ul.expandable>li div.details-container {
+  overflow: hidden;
+  position: relative;
+}
+
+figure img:not(.contain),
+figure video {
+  object-fit: cover;
+}
+
+figure img.contain {
+  object-fit: contain;
+}
+
+img:is(.ar, .aspect-ratio) {
+  height: calc(var(--aspect-ratio) * var(--width));
+}
+
+figure iframe,
+figure video {
+  display: block;
+  width: 100%;
+}
+
+figure img.fill,
+figure video.fill,
+figure.fill div:not(.image-zoom),
+figure.fill iframe,
+figure.fill img,
+figure.fill picture,
+figure.fill video,
+figure.video img,
+img.fill {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#tequila-container,
+.rlb,
+div.card,
+figure.responsive-media:not(.fill),
+section#homepage-hero-text div.heading div.heading-container,
+section#merch ul.expandable,
+section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"],
+section#tequilas-hero div.tequila,
+section.tequilas div.tequilas-container div.tequila {
+  position: relative;
+}
+
+.rlb code {
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.rlb code:last-of-type {
+  width: 3000px;
+}
+
+accordion-container,
+accordion-container accordion-element,
+accordion-container accordion-element accordion-inner,
+accordion-container accordion-element accordion-inner accordion-content,
+reveal-content,
+section#cookiebanner div.container strong,
+section#tequilas-hero div.tequila a div strong,
+section.tequilas div.tequilas-container div.tequila a div strong,
+svg {
+  display: block;
+}
+
+@media all and (min-width: 1920px) and (max-width: 2560.9px) {
+  :root {
+    --rem-base: 0.5vw;
+  }
+}
+
+@media all and (min-width: 2561px) {
+  :root {
+    --rem-base: 0.4vw;
+  }
+}
+
+body ::selection {
+  background: var(--black);
+  color: var(--white) !important;
+}
+
+@font-face {
+  font-family: AzeretMono;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/azeret-mono-v17-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: AzeretMono;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/azeret-mono-v17-latin-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: AzeretMono;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/azeret-mono-v17-latin-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: AzeretMono;
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/azeret-mono-v17-latin-600italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: AzeretMono;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/azeret-mono-v17-latin-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: AzeretMono;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/azeret-mono-v17-latin-900italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: GimletDisplayCompressed;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/GimletDisplayCompressed-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: GimletDisplayCompressed;
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/GimletDisplayCompressed-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: GimletDisplayCompressed;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GimletDisplayCompressed-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: GimletDisplayCompressed;
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/GimletDisplayCompressed-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: GimletDisplayCompressed;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/GimletDisplayCompressed-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: GimletDisplayCompressed;
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/GimletDisplayCompressed-MediumItalic.woff2") format("woff2");
+}
+
+.dt {
+  font-size: var(--dt);
+}
+
+.h1 {
+  font-size: var(--h1);
+  font-weight: 900;
+  line-height: 0.84;
+}
+
+.h2.gimlet,
+.h3 {
+  line-height: 1.2;
+}
+
+.h4,
+.h5 {
+  line-height: 1;
+  font-weight: 500;
+}
+
+.cta.lg,
+.h6 {
+  line-height: 1.4;
+}
+
+.h6 {
+  font-weight: 500;
+}
+
+.cta.lg {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.cta.sm {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.body.lg,
+section#legal div.body strong {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.body.lg {
+  line-height: 1.3;
+}
+
+.body.sm {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+.uc {
+  text-transform: uppercase;
+}
+
+@media all and (max-width: 767.9px) {
+  #_mobile {
+    display: block;
+  }
+
+  #main,
+  body,
+  section {
+    min-width: 320px;
+  }
+
+  :root {
+    --columns: 12;
+    --gutter: 2.67vw;
+    --margin: 4.27vw;
+    --dt: 6rem;
+    --h1: 5rem;
+    --header: 5.2rem;
+  }
+
+  .h2:not(.gimlet) {
+    font-size: 3rem;
+  }
+
+  .h2.gimlet {
+    font-size: 3.8rem;
+  }
+
+  .h3 {
+    font-size: 2.8rem;
+  }
+
+  .h4 {
+    font-size: 2rem;
+  }
+
+  .h5 {
+    font-size: 1.8rem;
+  }
+
+  .h6 {
+    font-size: 1.6rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900.9px) {
+  :root {
+    --dt: 8rem;
+    --h1: 6.6rem;
+  }
+
+  .h2:not(.gimlet) {
+    font-size: 3rem;
+  }
+
+  .h2.gimlet {
+    font-size: 3.8rem;
+  }
+
+  .h3 {
+    font-size: 2.8rem;
+  }
+
+  .h4 {
+    font-size: 2rem;
+  }
+
+  .h5 {
+    font-size: 1.8rem;
+  }
+
+  .h6 {
+    font-size: 1.6rem;
+  }
+}
+
+@media all and (min-width: 900.9px) and (max-width: 1439.9px) {
+  .h2.gimlet {
+    font-size: 5rem;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  --logo-ar: calc(35 / 244.3);
+}
+
+header div.container {
+  align-items: center;
+  display: flex;
+  height: var(--header);
+}
+
+header div.container>a {
+  display: block;
+  left: calc(50% - (var(--width) / 2));
+  position: absolute;
+  width: var(--width);
+  will-change: top, width;
+  --height: calc(var(--width) * var(--logo-ar));
+}
+
+header div.container>a svg {
+  width: var(--width);
+  will-change: width;
+}
+
+header div.container>a svg:first-child,
+section.tequila-hero div.gallery-container div.gallery figure img {
+  left: 0;
+}
+
+header div.container>a svg:last-child {
+  left: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-100%);
+}
+
+header div.container>a svg path {
+  fill: var(--black);
+}
+
+header button[action="cart.open"][cart-items-attr]:not([cart-items-attr="0"])::after {
+  content: "/" attr(cart-items-attr);
+}
+
+header nav,
+header nav div {
+  display: flex;
+  gap: 2.5rem;
+}
+
+header.splash div.container> :not(a),
+header.splash:not(.splash-animation),
+section#homepage-hero figure img:not(.active),
+section#merch ul.expandable>li.zoom figure div.image-zoom button[action="product.zoom"] svg:first-child,
+section#merch ul.expandable>li:not(.zoom) figure div.image-zoom button[action="product.zoom"] svg:last-child,
+section.faqs accordion-container div.faq-section accordion-element.active svg path:first-child,
+ul.expandable>li.active button[action="details.toggle"] svg path:last-child {
+  opacity: 0;
+}
+
+header.splash div.container>a {
+  top: calc((var(--vhF100) / 2) - (var(--height) / 2));
+  width: var(--grid);
+}
+
+header:is(.splash, .splash-animation) div.container>a {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header.splash div.container>a svg,
+header.splash.splash-2 div.container>a {
+  width: var(--width);
+}
+
+header.splash-animation div.container>a {
+  transition: top 0.6s cubic-bezier(0.83, 0, 0.17, 1),
+    width 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+header.splash-animation div.container>a svg {
+  transition: width 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+@media all and (max-width: 900.9px) {
+  header div.container {
+    justify-content: space-between;
+  }
+
+  header nav,
+  header nav div {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  header nav {
+    background: var(--white);
+    border-bottom: 1px solid var(--black);
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 var(--margin);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+  }
+
+  header nav div:first-child {
+    padding-top: 3rem;
+  }
+
+  header nav div:last-child {
+    padding-bottom: 4rem;
+  }
+
+  body.menu header nav {
+    height: 24rem;
+  }
+
+  body.menu-animation header nav {
+    transition: height 0.4s;
+  }
+
+  header.splash div.container>a {
+    --width: 65vw;
+  }
+
+  section#cookiebanner div.container {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px var(--margin);
+  }
+
+  section#cookiebanner div.container strong {
+    margin-bottom: 2rem;
+  }
+
+  section#cookiebanner div.container p {
+    margin-bottom: 3rem;
+  }
+}
+
+footer {
+  background: var(--black);
+  padding-bottom: 2rem;
+  position: relative;
+  z-index: 20;
+}
+
+footer>img {
+  position: absolute;
+  z-index: 200;
+}
+
+footer div.container,
+section#tequilas-awards div.splide ul li,
+section.tequila-highlights div.splide ul li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav,
+section.social div.container h2 {
+  align-items: center;
+  display: flex;
+}
+
+footer nav:first-of-type,
+section.homepage-tequila#homepage-reposado p,
+section.tequila-hero {
+  color: var(--white);
+}
+
+footer div.container>svg:last-child path,
+footer nav:first-of-type a svg path {
+  fill: var(--white);
+}
+
+footer div.container>p,
+footer nav:last-of-type {
+  color: var(--darkgrey);
+}
+
+footer div.container>svg:last-child {
+  width: var(--grid);
+}
+
+@media all and (max-width: 767.9px) {
+  header div.container {
+    align-items: flex-start;
+    --padding-top: 2.2rem !important;
+    --padding-bottom: 0;
+  }
+
+  header div.container>a {
+    top: 1.8rem;
+    --width: 12.6rem;
+  }
+
+  footer {
+    padding-top: 11rem;
+  }
+
+  footer>img {
+    left: calc(50% - 6.5rem);
+    top: -4rem;
+    width: 13rem;
+  }
+
+  footer nav {
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  footer nav:first-of-type a svg {
+    width: 2.4rem;
+  }
+
+  footer div.container>p,
+  section#age-gate div.block h2 {
+    margin-bottom: 2rem;
+  }
+
+  section#age-gate {
+    padding: 0 2rem;
+  }
+
+  section#age-gate div.block {
+    padding: 5rem 2rem;
+  }
+
+  section#age-gate div.block svg {
+    margin-bottom: 3rem;
+    width: 8.6rem;
+  }
+
+  section#age-gate div.block form {
+    margin-bottom: 3rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900.9px) {
+  footer {
+    padding-top: 12rem;
+  }
+
+  footer>img {
+    left: calc(50% - 8.5rem);
+    width: 16rem;
+  }
+
+  section.drawer div.container {
+    --drawer-width: min(calc(var(--vw100) * 0.75),
+        calc(var(--vw100) - (var(--margin) + 24.6rem + var(--margin))));
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1439.9px) {
+  footer {
+    padding-top: 13.5rem;
+  }
+
+  footer>img {
+    left: calc(50% - 9rem);
+    width: 18rem;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .h2.gimlet {
+    font-size: 6rem;
+  }
+
+  footer {
+    padding-top: 6rem;
+  }
+
+  footer>img {
+    right: calc(var(--margin) + var(--col2-g));
+    width: 20rem;
+  }
+}
+
+.bottom-border {
+  border-bottom: 1px solid var(--black);
+  padding-bottom: var(--margin);
+}
+
+.button {
+  border: 1px solid var(--border);
+  background: var(--lightgrey);
+}
+
+section.social>div.splide ul li,
+ul.expandable>li {
+  border-right: 1px solid var(--black);
+}
+
+section#cart #cart-heading,
+section#cart div#cart-totals h3,
+section#tequila-bar,
+section#tequilas-hero,
+section#tequilas-testimonials,
+section.faqs,
+section.social a div.splide,
+section.social>div.splide ul li,
+section.tequila-highlights,
+section.tequila-message,
+section.tequilas div.tequilas-container {
+  border-bottom: 1px solid var(--black);
+}
+
+video+button[action="video.play"] {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+video+button[action="video.play"]::before {
+  background: var(--black);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.4s;
+  width: 100%;
+  z-index: 3;
+}
+
+video+button[action="video.play"]::after {
+  background: var(--orange);
+  border-radius: 50%;
+  color: var(--ash);
+  content: "";
+  display: block;
+  height: var(--play-size);
+  left: calc(50% - (var(--play-size) / 2));
+  position: absolute;
+  top: calc(50% - (var(--play-size) / 2));
+  transform: none;
+  transition: transform 0.4s;
+  width: var(--play-size);
+  z-index: 4;
+  --play-size: var(--play-width, 6rem);
+}
+
+video+button[action="video.play"] button-outer {
+  z-index: 5;
+}
+
+video.playing+button[action="video.play"],
+video.playing+button[action="video.play"]+img {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+  z-index: 3;
+}
+
+.fade-in {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fade-in.reveal,
+.reveal .fade-in {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity var(--animation-duration, 0.8s) var(--animation-ease, ease) var(--animation-delay, 0.2s);
+}
+
+.text-reveal {
+  opacity: 0;
+  position: relative;
+}
+
+.text-reveal reveal-outer {
+  display: inline-block;
+  margin-bottom: calc(var(--reveal-padding, 0) * -1);
+  overflow: hidden;
+  position: relative;
+  vertical-align: bottom;
+}
+
+body::after,
+section#age-gate {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.text-reveal reveal-outer:last-child {
+  padding-right: var(--reveal-right-padding, 0);
+}
+
+.text-reveal reveal-outer reveal-inner {
+  display: block;
+  padding-bottom: var(--reveal-padding, 0);
+  transform: translate3d(0, 100%, 0);
+  will-change: transform;
+  --transition-delay: calc(var(--animation-delay, 0s) + (var(--index, 0) * 0.08s));
+}
+
+.text-reveal,
+.text-reveal.reveal,
+body.ready,
+body.transition::after,
+section.tequila-hero.unmasked div.heading h1,
+section.tequila-hero.unmasked div.tequila-text {
+  opacity: 1;
+}
+
+.reveal .text-reveal reveal-outer reveal-inner,
+.text-reveal.reveal reveal-outer reveal-inner {
+  transform: translate3d(0, 0, 0) !important;
+  transition: transform 0.65s cubic-bezier(0.215, 0.61, 0.355, 1) var(--transition-delay);
+}
+
+body::after {
+  background: var(--black);
+  content: "";
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 2147483649;
+}
+
+accordion-container accordion-element accordion-inner {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  will-change: height;
+}
+
+accordion-container accordion-element button,
+section#cart h2 {
+  text-align: left;
+  width: 100%;
+}
+
+accordion-container accordion-element.active accordion-inner {
+  height: auto;
+  opacity: 1;
+}
+
+accordion-container accordion-element.animate accordion-inner {
+  transition: height 0.4s, opacity 0.4s;
+}
+
+section#age-gate {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  z-index: 10000;
+}
+
+section#age-gate div.container {
+  background: var(--white);
+  padding: 1rem;
+  position: relative;
+  top: 0;
+  z-index: 100002;
+}
+
+section#age-gate div.block {
+  align-items: center;
+  border: 1px solid var(--black);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section#age-gate div.block form {
+  display: flex;
+  justify-content: center;
+}
+
+section#age-gate div.block form :is(button, a) {
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  width: 7.2rem;
+}
+
+section#age-gate div.block p {
+  max-width: 30rem;
+}
+
+section#age-gate figure img {
+  height: 100%;
+  max-height: none;
+}
+
+section#age-gate.accept {
+  background: 0 0;
+  pointer-events: none;
+}
+
+section#age-gate.accept div.container {
+  top: var(--top);
+  transition: top 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+section#age-gate.accept figure {
+  opacity: 0;
+}
+
+section#cookiebanner {
+  background: var(--seafoam);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  transform: translateY(100%);
+  transition: transform 0.4s;
+  width: 100%;
+  z-index: 250000;
+}
+
+section#cookiebanner>div:first-child:not(.container),
+section#homepage-hero-text div.heading span.border,
+section.homepage-tequila div.heading span.border,
+section.tequila-hero div.heading span.border {
+  display: none !important;
+}
+
+section#cookiebanner div.container,
+section#tequila-bar figure+div h2,
+section.homepage-tequila h2,
+section.tequila-hero div.heading .h1 {
+  display: flex;
+}
+
+section#cookiebanner div.container p a,
+section#legal div.body a {
+  text-decoration: underline;
+}
+
+section#cookiebanner div.container div {
+  display: flex;
+  gap: 2rem;
+}
+
+section#cookiebanner div.container div button:last-child {
+  background: var(--seafoam);
+  border: 1px solid var(--orange);
+  color: var(--orange);
+}
+
+section#cookiebanner.active,
+ul.expandable>li.active div.details-container div.details {
+  transform: translateY(0);
+}
+
+section#about-hero figure,
+section#four04 a {
+  padding: 0 1.5rem;
+}
+
+section.drawer {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+section.drawer::after {
+  background: var(--black);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.4s;
+  width: 100%;
+  z-index: 2001;
+}
+
+section.drawer div.container {
+  background: var(--background, var(--ash));
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  z-index: 2002;
+}
+
+section.drawer div.overlay-content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+section.drawer button.close {
+  z-index: 2010;
+}
+
+section.drawer.animate div.container,
+ul.activating>li button[action="details.toggle"] svg {
+  transition: transform 0.4s;
+}
+
+section#tequilas-awards div.splide ul li p,
+section.drawer.form-drawer h2,
+section.drawer.form-drawer h2+p,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide strong.h3,
+section.tequila-highlights div.splide ul li p,
+section.tequila-message h2 {
+  text-align: center;
+}
+
+section.drawer.form-drawer form {
+  width: 100%;
+  --form-background: var(--ash);
+  --form-placeholder: var(--black);
+  --form-foreground: var(--black);
+  --form-complete: var(--black);
+}
+
+section.drawer.form-drawer form div.form {
+  max-height: 10000px;
+}
+
+section.drawer.form-drawer form div.complete {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+body.cart section#cart::after,
+body.form-drawer section.drawer.form-drawer.active::after {
+  opacity: 0.85;
+}
+
+body.cart section#cart div.container,
+body.form-drawer section.drawer.form-drawer.active div.container {
+  transform: translateX(0);
+}
+
+body.cart section#cart div.overlay-content,
+body.form-drawer section.drawer.form-drawer.active div.overlay-content {
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+
+section.drawer form.complete div.form {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: max-height 0s 0.5s, opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+section.drawer form.complete div.complete {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0.5s;
+}
+
+@media all and (max-width: 767.9px) {
+  section.drawer div.container {
+    width: 100%;
+  }
+
+  section.drawer.form-drawer form div.form div.form-header {
+    margin-bottom: 4rem;
+  }
+}
+
+ul.expandable>li {
+  position: relative;
+  width: var(--width);
+}
+
+ul.expandable>li div.details-container figure img {
+  height: var(--height);
+  width: var(--width);
+}
+
+ul.expandable>li div.details-container div.details {
+  background: var(--white);
+  border-top: 1px solid var(--black);
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  scrollbar-color: var(--darkgrey);
+  scrollbar-width: thin;
+  transform: translateY(100%) translateY(-1px);
+  transition: transform 0.4s;
+  width: 100%;
+  z-index: 12;
+}
+
+ul.expandable>li div.details-container div.details div.detail div ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+ul.expandable>li button[action="details.toggle"] {
+  align-items: flex-start;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  z-index: 3;
+}
+
+section.tequilas div.tequilas-container div.tequila a div span,
+ul.expandable>li button[action="details.toggle"] span {
+  flex: 1;
+}
+
+ul.expandable>li button[action="details.toggle"] svg {
+  position: relative;
+  transition: transform 0.4s;
+  width: 1.2rem;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity button[action="cart.item.quantity"] svg,
+section.faqs accordion-container div.faq-section accordion-element button svg path,
+section.tequilas div.tequilas-container div.tequila a div svg path:last-child,
+ul.expandable>li button[action="details.toggle"] svg path,
+ul.expandable>li button[action="details.toggle"] svg path:last-child {
+  transition: opacity 0.4s;
+}
+
+section.faqs accordion-container div.faq-section accordion-element.active svg,
+ul.expandable>li.active button[action="details.toggle"] svg {
+  transform: rotate(90deg);
+}
+
+ul.activating>li :not(.active) button[action="details.toggle"] svg {
+  transform: rotate(180deg);
+}
+
+div.card.border,
+section.faqs accordion-container div.faq-section:not(:first-child) {
+  border-top: 1px solid var(--black);
+}
+
+section.faqs accordion-container div.faq-section h3 {
+  margin-bottom: 2rem;
+  padding: 0 var(--margin);
+}
+
+section.faqs accordion-container div.faq-section accordion-element {
+  transition: background 0.4s;
+  border-top: 1px solid var(--black);
+}
+
+section.faqs accordion-container div.faq-section accordion-element button,
+section.shop h2,
+section.tequilas h2 {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.faqs accordion-container div.faq-section accordion-element button span {
+  flex: 1;
+  padding-right: var(--col1);
+}
+
+section.faqs accordion-container div.faq-section accordion-element button svg {
+  transition: transform 0.4s;
+  width: 1.4rem;
+}
+
+section.faqs accordion-container div.faq-section accordion-element.active {
+  background-color: var(--lightgrey);
+}
+
+@media all and (max-width: 767.9px) {
+  ul.expandable>li {
+    --width: var(--vw100);
+  }
+
+  ul.expandable>li:not(:last-child) {
+    border-bottom: 1px solid var(--black);
+  }
+
+  ul.expandable>li div.details-container div.details {
+    max-height: calc(100% - 4rem);
+    padding: 2.5rem 0 2rem 1.6rem;
+  }
+
+  ul.expandable>li div.details-container div.details div.detail {
+    width: var(--col11-g);
+  }
+
+  ul.expandable>li button[action="details.toggle"] {
+    padding: 2rem 1.6rem;
+  }
+
+  ul.expandable>li button[action="details.toggle"] svg {
+    top: 0.5rem;
+  }
+
+  section.faqs accordion-container div.faq-section:not(:first-child) {
+    padding-top: 4rem;
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element {
+    padding: 0 var(--margin);
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element button {
+    padding: 1.5rem 0;
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element accordion-content {
+    padding-bottom: 2rem;
+    width: var(--col11);
+  }
+
+  section.faqs:not(#faqs) {
+    margin-bottom: 4rem;
+  }
+}
+
+section.full-video div.image {
+  height: calc(var(--vh100) - var(--header));
+  padding: 1.5rem;
+  position: relative;
+}
+
+section.full-video div.image :is(video, img) {
+  height: 100%;
+}
+
+section.full-video div.image div.block {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 4;
+}
+
+@media all and (max-width: 767.9px) {
+  section.full-video div.image div.block {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  section.full-video div.image div.block svg {
+    width: 9.5rem;
+  }
+
+  div.container.heading.margin {
+    margin-bottom: 4rem;
+  }
+}
+
+div.container.heading {
+  --padding-top: 3rem;
+}
+
+div.container.heading:not(.no-border) span.border {
+  border-bottom: 1px solid var(--black);
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+section.recipes h1 reveal-outer,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container {
+  width: 100%;
+}
+
+section.recipes h1 reveal-outer:last-child {
+  text-align: right;
+}
+
+section.recipes h1+a.button {
+  display: inline-block;
+  padding: 1rem 1.4rem;
+}
+
+section.recipes ul.expandable>li div.details-container figure {
+  aspect-ratio: 1.25;
+}
+
+section.recipes ul.expandable>li div.details-container figure img,
+section.tequila-highlights div.splide ul li figure img {
+  height: calc(var(--width) * 1.25);
+}
+
+section.recipes ul.expandable>li div.details-container div.details div.shop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+section.recipes ul.expandable>li div.details-container div.details div.shop a {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  height: 6.4rem;
+  padding: 0 1.4rem;
+  width: 20rem;
+}
+
+section.recipes ul.expandable>li div.details-container div.details div.shop a figure {
+  display: flex;
+  height: 4.8rem;
+  overflow: hidden;
+  width: 2.2rem;
+}
+
+section.recipes ul.expandable>li div.details-container div.details div.shop a figure img {
+  height: 4.8rem;
+  left: -0.9rem;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+
+section.recipes.carousel {
+  cursor: grab;
+}
+
+section.recipes.list+section.social {
+  margin-top: -1px;
+}
+
+@media all and (max-width: 767.9px) {
+  section.recipes h1:not(:last-child)+a {
+    margin-top: 2.5rem;
+  }
+
+  section.recipes ul.expandable>li div.details-container div.details div.detail {
+    margin-bottom: 2rem;
+    width: var(--col11-g);
+  }
+
+  section.recipes ul.expandable>li div.details-container div.details div.detail h3 {
+    margin-bottom: 2rem;
+  }
+
+  section.recipes.carousel {
+    border-bottom: 1px solid var(--black);
+    min-height: 0;
+  }
+
+  section.recipes.carousel ul.expandable>li {
+    border-bottom: none;
+    --width: var(--grid);
+  }
+
+  section.recipes.list ul.expandable {
+    flex-direction: column;
+  }
+
+  section.recipes.list ul.expandable>li {
+    border-right: none;
+    --width: var(--vw100);
+  }
+
+  figure.responsive-media :is(picture:not(.mobile), video:not(.mobile)) {
+    display: none;
+  }
+
+  figure.responsive-media::before {
+    background: var(--mobile-overlay);
+  }
+
+  figure.responsive-media :is(img, video) {
+    object-position: var(--mobile-position);
+  }
+
+  figure.responsive-media:not(.fill) img {
+    height: calc(var(--grid) * var(--mobile-ar));
+  }
+}
+
+@media all and (min-width: 768px) {
+  :root {
+    --columns: 24;
+    --gutter: 1.74vw;
+    --margin: 2.78vw;
+    --header: 7.5rem;
+  }
+
+  header div.container {
+    gap: 2.5rem;
+    padding-top: 0.4rem !important;
+  }
+
+  header div.container>a {
+    top: 2.6rem;
+    --width: 17.4rem;
+  }
+
+  footer>img {
+    top: -6rem;
+  }
+
+  footer nav,
+  section.full-video div.image div.block {
+    justify-content: center;
+  }
+
+  footer nav:first-of-type {
+    gap: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  footer nav:first-of-type a svg {
+    width: 2rem;
+  }
+
+  footer nav:last-of-type {
+    gap: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  footer div.container>p,
+  section#age-gate div.block form,
+  section#age-gate div.block h2 {
+    margin-bottom: 4rem;
+  }
+
+  section#age-gate div.block {
+    padding: 7rem;
+  }
+
+  section#age-gate div.block svg {
+    margin-bottom: 4rem;
+    width: 11.5rem;
+  }
+
+  section#age-gate div.block p {
+    text-align: center;
+  }
+
+  section.drawer div.container {
+    width: var(--drawer-width);
+  }
+
+  section.drawer.form-drawer form div.form div.form-header {
+    width: 100%;
+  }
+
+  ul.expandable {
+    align-items: stretch;
+  }
+
+  ul.expandable>li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.expandable>li div.details-container div.details {
+    max-height: calc(100% - 6rem);
+    padding: 3rem 0 2.5rem 2rem;
+  }
+
+  ul.expandable>li button[action="details.toggle"] {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  ul.expandable>li button[action="details.toggle"] svg {
+    top: 0.6rem;
+  }
+
+  section.faqs accordion-container div.faq-section:not(:first-child) {
+    padding-top: 6rem;
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element {
+    padding: 0.5rem var(--margin) 0;
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element button {
+    padding: 1.5rem 0;
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element accordion-content {
+    padding-bottom: 4rem;
+  }
+
+  div.container.heading.margin,
+  section.faqs:not(#faqs) {
+    margin-bottom: 6rem;
+  }
+
+  section.full-video div.image div.block svg {
+    width: 10rem;
+  }
+
+  section.recipes h1+a {
+    left: var(--margin);
+    position: absolute;
+  }
+
+  section.recipes ul.expandable {
+    margin-bottom: -1px;
+    --height: calc(var(--width) * 1.25);
+  }
+
+  section.recipes ul.expandable>li {
+    border-bottom: 1px solid var(--black);
+  }
+
+  section.recipes ul.expandable>li div.details-container div.details div.detail {
+    margin-bottom: 4rem;
+    max-width: var(--width);
+  }
+
+  section.recipes ul.expandable>li div.details-container div.details div.detail h3 {
+    margin-bottom: 1rem;
+  }
+
+  section.recipes.carousel {
+    min-height: 0;
+  }
+
+  section.recipes.list ul.expandable {
+    display: grid;
+  }
+
+  section.recipes.list ul.expandable>li {
+    --width: 30vw;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900.9px) {
+  section.drawer.form-drawer form div.form div.form-header {
+    margin-bottom: 6rem;
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element accordion-content {
+    width: var(--col20);
+  }
+
+  section.full-video div.image div.block {
+    gap: 4rem;
+  }
+
+  div.container.heading .h1 {
+    line-height: 100%;
+  }
+
+  section.recipes h1+a {
+    bottom: 4rem;
+  }
+
+  section.recipes ul.expandable {
+    --width: var(--col11);
+  }
+
+  section.recipes.list ul.expandable {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section.recipes.list ul.expandable>li {
+    --width: calc(var(--vw100) / 2);
+  }
+
+  section.recipes.list ul.expandable>li:nth-child(2n) {
+    border-right: none;
+  }
+
+  figure.responsive-media:not(.tablet-desktop) :is(picture:not(.mobile), video:not(.mobile)) {
+    display: none;
+  }
+
+  figure.responsive-media:not(.tablet-desktop)::before {
+    background: var(--mobile-overlay);
+  }
+
+  figure.responsive-media:not(.tablet-desktop) :is(img, video) {
+    max-height: calc(var(--vhF100) - var(--header) - 3rem);
+    object-position: var(--mobile-position);
+  }
+
+  figure.responsive-media:not(.tablet-desktop):not(.fill) img {
+    height: calc(var(--grid) * var(--mobile-ar));
+  }
+
+  figure.responsive-media.tablet-desktop :is(picture:not(.desktop), video:not(.desktop)) {
+    display: none;
+  }
+
+  figure.responsive-media.tablet-desktop::before {
+    background: var(--desktop-overlay);
+  }
+
+  figure.responsive-media.tablet-desktop :is(img, video) {
+    object-position: var(--desktop-position);
+  }
+
+  figure.responsive-media.tablet-desktop:not(.fill) img {
+    height: calc(var(--grid) * var(--desktop-ar));
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1799px) {
+  section.recipes.list ul.expandable {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section.recipes.list ul.expandable>li {
+    --width: calc(var(--vw100) / 3);
+  }
+
+  section.recipes.list ul.expandable>li:nth-child(3n + 3) {
+    border-right: none;
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1439.9px) {
+  section.recipes ul.expandable {
+    --width: min(var(--col8), 36rem);
+  }
+}
+
+@media all and (min-width: 1440px) and (max-width: 1799.9px) {
+  section.recipes ul.expandable {
+    --width: var(--col7-g);
+  }
+}
+
+figure.responsive-media,
+section.tequila-hero div.gallery-container div.gallery figure:nth-child(n + 2) {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+figure.responsive-media::before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+section.shop {
+  min-height: 0 !important;
+}
+
+section.shop div.shop-container {
+  min-height: var(--shop-height);
+  background: var(--white);
+  border-top: 1px solid var(--black);
+  position: relative;
+  z-index: 5;
+}
+
+section.shop h2+a.cta.lg,
+section.tequilas h2+a.cta.lg {
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1.4rem;
+  position: absolute;
+  right: var(--margin);
+}
+
+section.shop div.shop-container div.splide ul.splide__list li.splide__slide {
+  border-right: none;
+  min-height: var(--shop-height);
+}
+
+section.shop div.shop-container div.splide ul.splide__list li.splide__slide,
+section.shop div.shop-container div.splide ul.splide__list li.splide__slide div.details-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+section.shop div.shop-container div.splide ul.splide__list li.splide__slide div.details-container {
+  min-height: calc(var(--shop-height) - var(--button-height));
+}
+
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide figure img {
+  height: 100%;
+  width: 100%;
+}
+
+section.shop div.shop-container div.splide:last-child div.splide__arrows {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+section.shop div.shop-container div.splide:last-child div.splide__arrows button {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  width: 4rem;
+}
+
+section.shop div.shop-container div.splide:last-child div.splide__arrows button svg,
+section.tequila-hero div.gallery-container div.gallery-controls button[action^="tequila.gallery"] svg {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+section#merch ul.expandable>li div.details-container div.details div.sizes button,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.sizes button {
+  height: 4rem;
+  width: 4rem;
+}
+
+section#merch ul.expandable>li div.details-container div.details div.sizes button.active,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.sizes button.active,
+section.ticker {
+  background: var(--black);
+  color: var(--white);
+}
+
+section#merch ul.expandable>li div.details-container div.details button.disabled,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details button.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+section#merch ul.expandable>li div.details-container div.details div.detail,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.detail {
+  margin-bottom: 4rem;
+}
+
+section#merch ul.expandable>li div.details-container div.details div.quantity,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.quantity {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15rem;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity label,
+section#merch ul.expandable>li div.details-container div.details div.quantity label,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.quantity label {
+  align-items: center;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+}
+
+section#merch ul.expandable>li div.details-container div.details div.quantity button[action="product.quantity"],
+section#merch ul.expandable>li figure div.image-zoom button,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.quantity button[action="product.quantity"] {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  width: 4rem;
+}
+
+section#merch ul.expandable>li div.details-container div.details div.quantity button[action="product.quantity"] svg,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.quantity button[action="product.quantity"] svg {
+  height: 1.3rem;
+  transition: opacity 0.4s;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity button.disabled,
+section#merch ul.expandable>li div.details-container div.details div.quantity[data-quantity="1"] button[action="product.quantity"]:first-child,
+section.homepage-tequila:not(.active),
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.quantity[data-quantity="1"] button[action="product.quantity"]:first-child {
+  pointer-events: none;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity button.disabled svg,
+section#merch ul.expandable>li div.details-container div.details div.quantity[data-quantity="1"] button[action="product.quantity"]:first-child svg,
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.quantity[data-quantity="1"] button[action="product.quantity"]:first-child svg {
+  opacity: 0.3;
+}
+
+section#merch ul.expandable>li div.details-container div.details div.quantity button[action="cart.add"],
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container div.details div.quantity button[action="cart.add"] {
+  height: 4rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide button[action="details.toggle"] {
+  flex: 0;
+  position: relative;
+  z-index: 21;
+}
+
+section.shop.sticky {
+  padding-top: var(--heading);
+}
+
+section.shop.sticky div.heading {
+  position: fixed;
+  top: var(--header);
+  width: 100%;
+}
+
+@media all and (max-width: 767.9px) {
+  section.shop {
+    --shop-height: calc(var(--vhF100) - var(--header));
+  }
+
+  section.shop div.container {
+    padding-top: 7rem;
+  }
+
+  section.shop h2 {
+    flex-wrap: wrap;
+  }
+
+  section.shop h2 reveal-outer:last-child {
+    text-align: center;
+    width: 100%;
+  }
+
+  section.shop h2+a {
+    top: 1.5rem;
+  }
+
+  section.shop div.shop-container div.splide:first-child {
+    display: none;
+  }
+
+  section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide {
+    border-bottom: none;
+  }
+
+  section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide figure {
+    margin-bottom: 8rem;
+  }
+
+  section.shop div.shop-container div.splide:last-child div.splide__arrows {
+    gap: 1rem;
+    justify-content: center;
+    position: absolute;
+    top: calc(var(--vw100) + 2rem);
+  }
+
+  section.social {
+    padding-bottom: 4rem;
+  }
+
+  section.social a div.splide {
+    padding: 1.5rem 0;
+  }
+
+  section.social a div.splide ul li {
+    margin-right: 2rem;
+  }
+
+  section.social div.container h2 {
+    flex-direction: column;
+  }
+
+  section.social>div.splide ul li {
+    --width: 21rem;
+  }
+}
+
+section.social {
+  background: var(--white);
+  z-index: 20;
+}
+
+section.social a div.splide {
+  background: var(--lightgrey);
+  border-top: 1px solid var(--black);
+  display: block;
+}
+
+section.social>div.splide ul li a img {
+  height: calc(var(--width) * 1.25);
+  width: var(--width);
+}
+
+@media all and (min-width: 768px) {
+  section.shop div.container {
+    padding-top: 9rem;
+    padding-bottom: 6rem;
+  }
+
+  section.shop h2+a {
+    top: 3rem;
+  }
+
+  section.shop div.shop-container {
+    align-items: stretch;
+    display: flex;
+  }
+
+  section.shop div.shop-container div.splide {
+    flex: 1;
+  }
+
+  section.shop div.shop-container div.splide:first-child ul li figure {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  section.shop div.shop-container div.splide:last-child {
+    border-left: 1px solid var(--black);
+  }
+
+  section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide,
+  section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide div.details-container {
+    justify-content: center;
+  }
+
+  section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide figure {
+    margin-bottom: 4rem;
+  }
+
+  section.shop div.shop-container div.splide:last-child div.splide__arrows {
+    justify-content: space-between;
+    left: 0;
+    padding: var(--margin);
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 2rem - 6.6rem);
+  }
+
+  section.shop div.shop-container div.splide:last-child div.splide__arrows button {
+    pointer-events: auto;
+  }
+
+  section.shop div.shop-container div.splide:last-child ul li div.details-container {
+    position: relative;
+    top: 0;
+    transition: width 0.4s;
+    width: calc(var(--width) - 1px);
+  }
+
+  section.shop div.shop-container div.splide:last-child ul li div.details-container div.details {
+    max-height: calc(100% - 6rem);
+    padding: 3rem 0 2.5rem 2rem;
+  }
+
+  section.shop div.shop-container div.splide:last-child ul li div.details-container div.details div.detail {
+    min-height: calc(2.5rem + 2rem + 2rem + 4rem);
+    width: var(--col6);
+  }
+
+  section.shop div.shop-container div.splide:last-child ul li div.details-container div.details strong[product="price"] {
+    position: absolute;
+    right: 2.5rem;
+    top: 3rem;
+  }
+
+  section.shop div.shop-container div.splide:last-child ul li div.details-container div.details div.quantity {
+    bottom: 2.5rem;
+    position: absolute;
+    right: 2.5rem;
+  }
+
+  section.shop div.shop-container div.splide:last-child ul li button[action="details.toggle"] {
+    transition: width 0.4s;
+  }
+
+  section.social {
+    padding-bottom: 6rem;
+  }
+
+  section.social a div.splide {
+    padding: 2rem 0;
+  }
+
+  section.social a div.splide ul li {
+    margin-right: 3rem;
+  }
+
+  section.social div.container h2 {
+    justify-content: space-between;
+  }
+}
+
+div.splide {
+  overflow: hidden;
+}
+
+div.splide ul {
+  will-change: transform;
+}
+
+section#tequilas-testimonials ul li,
+section.statement div.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.statement#homepage-statement div.container {
+  justify-content: center;
+}
+
+section.statement#about-statement div.container {
+  --padding-top: 14rem;
+}
+
+@media all and (max-width: 767.9px) {
+  section.statement figure {
+    margin-bottom: 3rem;
+  }
+
+  section.statement blockquote {
+    font-size: 2.8rem !important;
+    margin-bottom: 4rem;
+  }
+
+  section.statement small {
+    width: var(--col10-g);
+  }
+
+  section.statement#homepage-statement figure img {
+    width: 18rem;
+  }
+
+  section.tequilas {
+    padding-bottom: 4rem;
+  }
+
+  section.tequilas h2 {
+    flex-wrap: wrap;
+    line-height: 1.2;
+  }
+
+  section.tequilas h2 reveal-outer:last-child {
+    width: 100%;
+  }
+
+  section.tequilas h2+a {
+    bottom: 4rem;
+  }
+
+  section.tequilas div.tequilas-container div.tequila a div {
+    padding: 2rem 1.6rem;
+  }
+
+  section.tequilas div.tequilas-container div.tequila a div svg {
+    top: 0.5rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  section.statement figure {
+    margin-bottom: 4rem;
+  }
+
+  section.statement blockquote {
+    margin-bottom: 5rem;
+  }
+
+  section.statement#homepage-statement figure img {
+    width: 21rem;
+  }
+}
+
+@media all and (min-width: 901px) and (max-height: 800px) {
+  section.statement blockquote {
+    font-size: 4.5rem !important;
+  }
+
+  section.statement#homepage-statement figure img {
+    width: 18rem;
+  }
+}
+
+section#tequilas-hero div.tequila a figure,
+section.tequilas div.tequilas-container div.tequila a figure {
+  left: 0;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+}
+
+section#tequilas-hero div.tequila a div button,
+section.homepage-tequila div.tequila-text a.button,
+section.tequilas div.tequilas-container div.tequila a div button {
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1.4rem;
+}
+
+section.tequilas div.tequilas-container div.tequila a div {
+  align-items: flex-start;
+  background: var(--white);
+  border-top: 1px solid var(--black);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  z-index: 3;
+}
+
+section.tequilas div.tequilas-container div.tequila a div svg {
+  position: relative;
+  width: 1.2rem;
+}
+
+section.ticker ul li::after {
+  content: " ";
+  white-space: pre;
+}
+
+div.card:not(.black),
+div.page[controller="homepage"] {
+  background: var(--white);
+}
+
+section#homepage-hero {
+  height: var(--vhF100);
+  margin-top: calc(var(--header) * -1);
+  padding-top: var(--header);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.tequila-page,
+section#homepage-hero-text {
+  height: calc(var(--vhF100) - var(--header));
+  left: 0;
+}
+
+section#homepage-hero div.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+section#homepage-hero h1 {
+  position: relative;
+  width: 100%;
+  --animation-delay: 0.2s;
+}
+
+section#homepage-hero h1 reveal-outer:nth-child(4) {
+  z-index: 6;
+}
+
+section#homepage-hero div#hero-taglines {
+  position: absolute;
+  width: 100%;
+  --animation-delay: 0.65s;
+}
+
+section#homepage-hero figure {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: var(--header);
+  width: 100%;
+  --animation-duration: 2s;
+}
+
+section#homepage-hero figure img {
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+}
+
+section#homepage-hero figure#blanco-bottle span {
+  transform: scaleX(0);
+}
+
+section#homepage-hero figure#reposado-bottle {
+  z-index: 2;
+}
+
+section#homepage-hero figure#reposado-bottle div {
+  background: var(--black);
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: clip-path;
+}
+
+section#homepage-hero-text {
+  color: var(--white);
+  -webkit-mix-blend-mode: difference;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  position: fixed;
+  top: var(--header);
+  width: 100%;
+  z-index: 6;
+}
+
+section#homepage-hero-text div.heading div.heading-container h2 {
+  background: 0 0;
+  display: flex;
+}
+
+section#homepage-hero-text div#hero-taglines {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  --animation-delay: 0.65s;
+}
+
+@media all and (max-width: 900.9px) {
+  section.drawer button.close {
+    top: 2rem;
+  }
+
+  section.drawer.form-drawer div.container {
+    --padding-top: var(--padding-single);
+  }
+
+  section.drawer.form-drawer form h2:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  section.drawer.form-drawer form div.complete p:not(:last-child) {
+    margin-bottom: 3.5rem;
+  }
+
+  section.hero small {
+    margin-bottom: 0.8rem;
+  }
+
+  section.statement#about-statement figure img {
+    width: 12rem;
+  }
+
+  section.tequilas div.tequilas-container div.tequila figure {
+    height: calc(var(--vw100) * 1.25);
+  }
+
+  section#homepage-hero figure {
+    height: calc(var(--vhF100) - var(--header));
+    object-fit: cover;
+    width: 100%;
+    --width: calc(var(--height) * 0.81);
+  }
+
+  section#homepage-hero figure img {
+    height: var(--height);
+    left: 50%;
+    object-fit: cover;
+    transform: translateX(-50%);
+    width: var(--width);
+  }
+}
+
+@media all and (max-width: 767.9px) {
+  section.ticker div.splide__track ul li {
+    height: 4.2rem;
+    line-height: 4.2rem;
+  }
+
+  section#homepage-hero h1 {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 17.6vw;
+    justify-content: space-between;
+    top: 2rem;
+  }
+
+  section#homepage-hero h1 reveal-outer:first-child {
+    letter-spacing: 1.88vw;
+    text-align: center;
+    width: 100%;
+  }
+
+  section#homepage-hero h1 reveal-outer:nth-child(3) {
+    z-index: 2;
+  }
+
+  section#homepage-hero figure {
+    --height: calc(var(--vhF100) - var(--bottle-top-mobile, 12rem) - 9rem);
+  }
+
+  section#homepage-hero figure img {
+    top: calc(var(--bottle-top-mobile, 12rem) - var(--header));
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2 {
+    flex-direction: column;
+    opacity: 1;
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2 reveal-outer {
+    width: 100%;
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2 reveal-outer:first-child {
+    text-align: left;
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2 reveal-outer:last-child {
+    text-align: right;
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2:first-child {
+    justify-content: space-between;
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2:last-child {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    width: var(--grid);
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2:last-child reveal-outer:first-child {
+    visibility: hidden;
+  }
+
+  section#homepage-hero-text div#hero-taglines {
+    bottom: 3rem;
+    padding: 0 var(--margin);
+  }
+
+  section#homepage-hero-text div#hero-taglines div:first-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transform: none !important;
+  }
+
+  section#homepage-hero-text div#hero-taglines div:last-child {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  section.tequilas {
+    padding-bottom: 6rem;
+  }
+
+  section.tequilas div.container {
+    padding-top: 9rem;
+  }
+
+  section.tequilas h2+a {
+    top: 3rem;
+  }
+
+  section.tequilas div.tequilas-container {
+    align-items: stretch;
+    display: flex;
+  }
+
+  section.tequilas div.tequilas-container div.tequila {
+    width: 50%;
+  }
+
+  section.tequilas div.tequilas-container div.tequila:last-child::before {
+    border-right: 1px solid var(--black);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+  }
+
+  section.tequilas div.tequilas-container div.tequila a figure {
+    height: calc(var(--vw100) / 2 * 0.75);
+  }
+
+  section.tequilas div.tequilas-container div.tequila a div {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  section.tequilas div.tequilas-container div.tequila a div svg {
+    top: 0.6rem;
+  }
+
+  section.ticker div.splide__track ul li {
+    height: 5.4rem;
+    line-height: 5.4rem;
+  }
+
+  section#homepage-hero h1 {
+    height: calc(var(--dt) * 0.9 * 2);
+  }
+
+  section#homepage-hero h1 reveal-outer {
+    position: absolute;
+  }
+
+  section#homepage-hero h1 reveal-outer:first-child {
+    top: 0;
+    left: 0;
+  }
+
+  section#homepage-hero h1 reveal-outer:nth-child(2) {
+    top: 0;
+    right: 0;
+  }
+
+  section#homepage-hero h1 reveal-outer:nth-child(3) {
+    bottom: 0;
+    left: 0;
+  }
+
+  section#homepage-hero h1 reveal-outer:nth-child(4) {
+    bottom: 0;
+    right: 0;
+  }
+
+  section#homepage-hero figure span {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: calc(6rem + var(--h1-line-height));
+    width: 100%;
+    z-index: -1;
+  }
+
+  section#homepage-hero figure#blanco-bottle span {
+    border-bottom: 1px solid var(--black);
+  }
+
+  section#homepage-hero figure#reposado-bottle span {
+    border-bottom: 1px solid var(--white);
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2 {
+    opacity: 1;
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2:first-child {
+    justify-content: space-between;
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2:last-child {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    width: var(--grid);
+  }
+
+  section#homepage-hero-text div.heading div.heading-container h2:last-child reveal-outer:first-child {
+    visibility: hidden;
+  }
+
+  section#homepage-hero-text div#hero-taglines {
+    bottom: 5rem;
+    height: 2.8rem;
+  }
+
+  section#homepage-hero-text div#hero-taglines div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--margin);
+    position: absolute;
+    width: 100%;
+  }
+
+  section#homepage-hero-text div#hero-taglines div:last-child {
+    opacity: 0;
+  }
+}
+
+div.card.black {
+  background: var(--black);
+}
+
+div.card.locked {
+  height: var(--height);
+}
+
+div.card.locked section {
+  bottom: 0;
+  width: 100%;
+}
+
+div.card.locked:not(.complete) section {
+  position: fixed;
+}
+
+div.card.locked.complete section {
+  position: absolute;
+}
+
+section.homepage-tequila div.tequila-text {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+
+section#four04 h1,
+section#four04 p,
+section.homepage-tequila div.tequila-text p {
+  margin-bottom: 3rem;
+}
+
+div.card#card-blanco {
+  height: calc(var(--vhF100) - var(--header)) !important;
+}
+
+div.card#card-reposado.locked section {
+  bottom: auto;
+  top: var(--header);
+}
+
+section.homepage-tequila#homepage-reposado figure {
+  height: 100%;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  display: NONE;
+}
+
+section.homepage-tequila#homepage-reposado figure img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  section#homepage-hero figure#reposado-bottle div {
+    background: 0 0;
+  }
+
+  section#homepage-hero figure#reposado-bottle span {
+    border-bottom: 1px solid var(--black);
+  }
+
+  section#homepage-hero-text {
+    color: var(--black);
+    -webkit-mix-blend-mode: none;
+    mix-blend-mode: none;
+  }
+
+  section.homepage-tequila#homepage-reposado p {
+    color: var(--black);
+  }
+}
+
+div.card#homepage-video-card {
+  height: calc((var(--vhF100) - var(--header)) * 1.5);
+}
+
+section#about-hero {
+  padding-bottom: 1.5rem;
+}
+
+section#about-story div.image {
+  height: auto;
+  padding-top: 0;
+}
+
+@media all and (min-width: 768px) and (max-width: 900.9px) {
+  section.shop {
+    --shop-height: calc((var(--vhF100) - var(--header)) * 0.65);
+  }
+
+  section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide figure {
+    height: var(--col10);
+    width: var(--col10);
+  }
+
+  section.social>div.splide ul li {
+    --width: 30rem;
+  }
+
+  section.social div.container h2 {
+    flex-wrap: wrap;
+  }
+
+  section.social div.container h2 reveal-outer:last-child {
+    text-align: center;
+    width: 100%;
+  }
+
+  section#homepage-hero figure {
+    --height: calc(var(--vhF100) - var(--bottle-top-tablet, 14rem) - 11rem);
+  }
+
+  section#homepage-hero figure img {
+    top: calc(var(--bottle-top-tablet, 14rem) - var(--header));
+  }
+
+  section#about-story p {
+    width: var(--col10-g);
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1799.9px) {
+  section#about-story p {
+    width: var(--col9-g);
+  }
+}
+
+@media all and (min-width: 1800px) {
+  section.recipes ul.expandable {
+    --width: var(--col6-g);
+  }
+
+  section.recipes.list ul.expandable {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  section.recipes.list ul.expandable>li {
+    --width: calc(var(--vw100) / 4);
+  }
+
+  section.recipes.list ul.expandable>li:nth-child(4n + 4) {
+    border-right: none;
+  }
+
+  section#about-story p {
+    width: var(--col8-g);
+  }
+}
+
+.tequila-page,
+section#tequilas-testimonials.sticky:not(.stuck) div.body {
+  position: fixed;
+  top: var(--header);
+}
+
+@media all and (min-width: 901px) {
+  :root {
+    --dt: min(10.42vw, 17.5rem);
+    --h1: min(7.638vw, 12.8rem);
+  }
+
+  .h2:not(.gimlet) {
+    font-size: 5rem;
+  }
+
+  .h3 {
+    font-size: 4rem;
+  }
+
+  .h4 {
+    font-size: 2.8rem;
+  }
+
+  .h5 {
+    font-size: 2.2rem;
+  }
+
+  .h6 {
+    font-size: 1.8rem;
+  }
+
+  header::after {
+    border-bottom: 1px solid var(--black);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    transform: scaleX(1);
+    transform-origin: left;
+    width: 100%;
+  }
+
+  header button[action="menu.toggle"] {
+    display: none;
+  }
+
+  header nav,
+  header nav div {
+    align-items: center;
+    height: var(--header);
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: calc(var(--grid) - 2.5rem - 4rem);
+  }
+
+  header.splash::after {
+    transform: scaleX(0);
+  }
+
+  header.splash div.container>a {
+    --width: 45vw;
+  }
+
+  header.splash-animation::after {
+    transition: transform 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+  }
+
+  section#cookiebanner div.container {
+    align-items: center;
+    height: 7rem;
+  }
+
+  section#cookiebanner div.container strong {
+    margin-right: 7rem;
+  }
+
+  section#cookiebanner div.container p {
+    flex: 1;
+    padding-right: var(--gutter);
+  }
+
+  section.drawer div.container {
+    --drawer-width: min(min(calc(var(--vw100) - (var(--margin) + 28.8rem + var(--margin))),
+          1280px),
+        calc(var(--vw100) * 0.5));
+  }
+
+  section.drawer button.close {
+    top: 4rem;
+  }
+
+  section.drawer.form-drawer div.container {
+    padding: var(--padding-single) var(--col1) var(--padding-sm-single);
+  }
+
+  section.drawer.form-drawer form h2:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  section.drawer.form-drawer form div.form div.form-header {
+    margin-bottom: 7rem;
+    padding: 0 var(--col2);
+    width: 100%;
+  }
+
+  section.drawer.form-drawer form div.form div.submit {
+    width: 100%;
+  }
+
+  section.drawer.form-drawer form div.form fieldset:first-child {
+    margin-top: var(--padding-sm-single);
+  }
+
+  section.drawer.form-drawer form div.complete {
+    padding: 0 var(--col2);
+  }
+
+  section.drawer.form-drawer form div.complete p:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element accordion-content {
+    width: var(--col16);
+  }
+
+  section.full-video div.image div.block {
+    gap: 6rem;
+  }
+
+  section.recipes h1+a {
+    bottom: 3.3rem;
+  }
+
+  figure.responsive-media :is(picture:not(.desktop), video:not(.desktop)) {
+    display: none;
+  }
+
+  figure.responsive-media::before {
+    background: var(--desktop-overlay);
+  }
+
+  figure.responsive-media :is(img, video) {
+    object-position: var(--desktop-position);
+  }
+
+  figure.responsive-media:not(.fill) img {
+    height: calc(var(--grid) * var(--desktop-ar));
+  }
+
+  section.shop {
+    --shop-height: calc(var(--vhF100) - var(--header));
+  }
+
+  section.shop div.shop-container div.splide:last-child ul.splide__list li.splide__slide figure {
+    height: var(--col8);
+    width: var(--col8);
+  }
+
+  section.social>div.splide ul li {
+    --width: 36rem;
+  }
+
+  section.statement#about-statement figure img {
+    width: var(--col2);
+  }
+
+  section#homepage-hero figure img {
+    height: calc(var(--vhF100) - 20rem);
+    top: calc(14rem - var(--header));
+  }
+
+  section#tequilas-hero div.tequila a figure {
+    height: calc(var(--vw100) / 2 * 0.75);
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900.9px) {
+  section#tequilas-hero div.tequila a div strong {
+    font-size: 6.2rem;
+  }
+
+  section#tequilas-hero div.tequila a div p {
+    width: var(--col9);
+  }
+
+  section#tequilas-hero div.tequila a figure {
+    height: calc(var(--vw100) * 0.75);
+  }
+}
+
+section#tequilas-testimonials ul li svg {
+  height: 1.4rem;
+}
+
+section#tequilas-testimonials:not(.stuck) div.body {
+  top: 0;
+}
+
+section#tequilas-testimonials.sticky.stuck div.body {
+  bottom: 0;
+}
+
+@media all and (max-width: 767.9px) {
+  section.homepage-tequila h2 {
+    flex-direction: column;
+  }
+
+  section.homepage-tequila h2 reveal-outer {
+    width: 100%;
+  }
+
+  section.homepage-tequila h2 reveal-outer:first-child {
+    text-align: left;
+  }
+
+  section.homepage-tequila h2 reveal-outer:last-child {
+    text-align: right;
+  }
+
+  section.homepage-tequila div.tequila-text {
+    align-items: center;
+    bottom: 3rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+
+  section#about-hero h1 strong:first-child,
+  section#tequilas-awards div.splide div.splide__arrows,
+  section.homepage-tequila div.tequila-text p {
+    display: none;
+  }
+
+  section.homepage-tequila#homepage-blanco.complete div.tequila-text a {
+    opacity: 1 !important;
+    pointer-events: auto;
+  }
+
+  div.card#card-reposado {
+    background: 0 0;
+    height: calc((var(--vhF100) - var(--header)) * 1.1);
+  }
+
+  section.homepage-tequila#homepage-reposado figure {
+    top: calc(21rem - var(--header));
+  }
+
+  section.homepage-tequila#homepage-reposado figure img {
+    height: calc(var(--vhF100) - 30rem);
+  }
+
+  section.homepage-tequila.sticky#homepage-reposado {
+    position: fixed;
+    top: var(--header);
+  }
+
+  div.card#card-reposado.locked div.tequila-text a.button {
+    opacity: 1 !important;
+  }
+
+  section#about-hero h1 strong:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  section#about-story div.container {
+    --padding-top: 8rem;
+  }
+
+  section#about-story h2 {
+    margin-bottom: 5rem;
+  }
+
+  section#tequilas-hero div.tequila figure {
+    height: calc(var(--vw100) * 1.25);
+  }
+
+  section#tequilas-hero div.tequila a div {
+    padding: 2rem var(--margin) 4rem;
+  }
+
+  section#tequilas-hero div.tequila a div p,
+  section#tequilas-hero div.tequila a div strong,
+  section#tequilas-testimonials ul li blockquote,
+  section#tequilas-testimonials ul li svg {
+    margin-bottom: 2rem;
+  }
+
+  section#tequilas-testimonials div.container {
+    padding-top: var(--text-height);
+  }
+
+  section#tequilas-testimonials div.body {
+    padding: 6rem 0;
+    position: absolute;
+    top: 0;
+    width: var(--grid);
+  }
+
+  section#tequilas-testimonials ul {
+    background: var(--white);
+    padding: 6rem 0;
+    position: relative;
+    z-index: 4;
+  }
+
+  section#tequilas-testimonials ul::before {
+    border-top: 1px solid var(--black);
+    content: "";
+    display: block;
+    left: var(---margin);
+    position: absolute;
+    top: 0;
+    width: var(--vw100);
+  }
+
+  section#tequilas-testimonials ul li {
+    padding: 0 var(--margin);
+  }
+
+  section#tequilas-testimonials ul li:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  section#tequilas-awards h2 {
+    flex-wrap: wrap;
+  }
+
+  section#tequilas-awards h2 span:last-child {
+    padding-top: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  section#tequilas-awards div.splide ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#tequilas-awards div.splide ul li {
+    padding: 5rem calc(var(--margin) * 2);
+  }
+
+  section#tequilas-awards div.splide ul li:not(:last-child) {
+    border-bottom: 1px solid var(--black);
+  }
+
+  section#tequilas-awards div.splide ul li figure {
+    margin-bottom: 4rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900.9px) {
+  section#tequilas-testimonials div.body {
+    width: var(--col11-g);
+  }
+
+  section#tequilas-testimonials ul li {
+    width: var(--col10-g);
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1199.9px) {
+  section#tequilas-hero div.tequila a div p {
+    width: var(--col8-g);
+  }
+
+  section#tequilas-testimonials ul li {
+    width: var(--col9-g);
+  }
+}
+
+section#tequilas-awards div.splide ul li figure img {
+  height: calc(var(--width) * 1.25);
+  object-fit: contain;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type>div:first-child,
+section#tequilas-awards div.splide ul li strong,
+section.tequila-highlights div.splide ul li strong {
+  margin-bottom: 2rem;
+}
+
+.tequila-page {
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  visibility: hidden;
+  width: 100%;
+  z-index: 50;
+}
+
+.tequila-page.active {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  visibility: visible;
+  transition: clip-path 0.6s cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+.tequila-page.active section.tequila-hero div.tequila-text {
+  opacity: 1;
+  pointer-events: none;
+}
+
+section.tequila-hero div.heading {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+section.tequila-hero div.gallery-container div.gallery figure {
+  left: 0;
+  min-height: calc(var(--vhF100) - var(--header));
+  top: 0;
+  width: 100%;
+  background: var(--white);
+  --width: 100%;
+}
+
+section.tequila-hero div.gallery-container div.gallery figure:first-child img:first-child {
+  height: var(--bottle-height);
+  position: absolute;
+  top: var(--bottle-top);
+}
+
+section.tequila-hero div.gallery-container div.gallery figure:first-child img:last-child {
+  height: var(--background-height);
+  margin-bottom: var(--y);
+  position: relative;
+  top: var(--y);
+  z-index: -1;
+}
+
+section.tequila-hero div.gallery-container div.gallery {
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+section#merch ul.expandable>li figure img:not(.active),
+section.tequila-hero div.gallery-container div.gallery figure:not(.active) {
+  opacity: 0;
+  transition: opacity 0s 0.4s;
+}
+
+section#merch ul.expandable>li figure img.active,
+section.tequila-hero div.gallery-container div.gallery figure.active {
+  transition: opacity 0.4s;
+  z-index: var(--z-index, 3);
+}
+
+section.tequila-hero div.gallery-container div.gallery-controls {
+  align-items: center;
+  display: flex;
+  pointer-events: none;
+  z-index: 5;
+}
+
+section.tequila-hero div.gallery-container div.gallery-controls button {
+  align-items: center;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  pointer-events: auto;
+  width: 4rem;
+}
+
+section.tequila-hero.unmasked div.heading h1 reveal-outer reveal-inner,
+section.tequila-hero.unmasked div.tequila-text {
+  transition: none !important;
+  transform: none !important;
+}
+
+@media all and (max-width: 767.9px) {
+  section.tequila-hero div.heading .h1 {
+    flex-direction: column;
+    opacity: 1;
+  }
+
+  section.tequila-hero div.heading .h1 reveal-outer {
+    width: 100%;
+  }
+
+  section.tequila-hero div.heading .h1 reveal-outer:first-child {
+    text-align: left;
+  }
+
+  section.tequila-hero div.heading .h1 reveal-outer:last-child {
+    text-align: right;
+  }
+
+  section.tequila-hero div.gallery-container {
+    position: relative;
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure {
+    --bottle-height: calc(var(--vhF100) - 18rem - 9rem);
+    --bottle-top: calc(18rem - var(--header));
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure:first-child img:last-child {
+    --y: calc(var(--bottle-top) - var(--top-margin));
+    --background-height: calc((var(--bottle-height)) * 1.7);
+    --top-margin: calc((var(--background-height) - var(--bottle-height)) / 2);
+  }
+
+  section.tequila-hero div.gallery-container div.gallery-controls {
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    width: 100%;
+  }
+
+  section.tequila-hero div.tequila-text {
+    color: var(--black);
+    padding: 8rem 0;
+    text-align: center;
+  }
+
+  section.tequila-hero div.tequila-text p {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  section.tequila-hero div.tequila-text :is(strong, form) {
+    display: none;
+  }
+
+  .tequila-page.active section.tequila-hero div.tequila-text {
+    display: none;
+  }
+}
+
+section#tequila-bar {
+  background: var(--white);
+  border-top: 1px solid var(--black);
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+section#tequila-bar div.container {
+  display: flex;
+  --padding-top: 1.5rem;
+}
+
+section#tequila-bar form button[action="cart.add"] {
+  height: 4rem;
+  padding: 0 1.5rem;
+}
+
+@media all and (max-width: 900.9px) {
+  section.tequila-hero div.gallery-container {
+    height: calc(var(--vhF100) - var(--header));
+    overflow: hidden;
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure {
+    height: calc(var(--vhF100) - var(--header));
+    width: 100%;
+    --width: calc(var(--bottle-height) * 0.81);
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure img {
+    object-fit: cover;
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure:first-child img:first-child {
+    left: 50%;
+    transform: translateX(-50%);
+    width: var(--width);
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure:nth-child(n + 2) img {
+    height: 100%;
+  }
+
+  section#tequila-bar form div.quantity {
+    display: none;
+  }
+}
+
+section#merch h1,
+section.tequila-highlights h2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+section#tequila-cta {
+  background: var(--background-color, "white");
+  color: var(--text-color, "black");
+}
+
+section#tequila-cta div.container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#tequila-cta div.container div {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+section#tequila-cta div.container div a {
+  height: 4rem;
+  line-height: 4rem;
+  padding: 0 1.4rem;
+  --color: var(--black);
+}
+
+section#tequila-cta figure {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+section#merch ul.expandable>li figure div.image-container {
+  position: relative;
+  z-index: 8;
+}
+
+section#merch ul.expandable>li figure img {
+  background: var(--white);
+  --width: 100%;
+}
+
+section#merch ul.expandable>li figure div.image-zoom {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
+
+section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"] svg {
+  transition: opacity 0.2s;
+}
+
+section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"] svg:last-child {
+  height: var(--zoom-height);
+  left: calc(50% - calc(var(--zoom-height) / 2));
+  position: absolute;
+  top: calc(50% - calc(var(--zoom-height) / 2));
+  width: var(--zoom-height);
+}
+
+section#merch ul.expandable>li.zoom figure div.image-zoom button[action="product.zoom"] svg:last-child,
+section#merch ul.expandable>li:not(.zoom) figure div.image-zoom button[action="product.zoom"] svg:first-child {
+  transition-delay: 0.2s;
+}
+
+@supports not (-webkit-touch-callout: none) {
+  #_notouch {
+    display: block;
+  }
+
+  header :is(a:not(#header-logo), button) {
+    position: relative;
+  }
+
+  header :is(a:not(#header-logo), button)::before {
+    border-bottom: 1px solid var(--black);
+    bottom: -2px;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+    width: 100%;
+  }
+
+  header :is(a:not(#header-logo), button):hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  footer nav a {
+    transition: color 0.2s;
+  }
+
+  footer nav a svg path {
+    transition: fill 0.2s;
+  }
+
+  footer nav a:hover {
+    color: var(--border);
+  }
+
+  footer nav:first-of-type a:hover svg path {
+    fill: var(--border);
+  }
+
+  .button {
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .button svg path {
+    transition: fill 0.2s, stroke 0.2s;
+  }
+
+  .button:hover {
+    background-color: var(--black);
+    border-color: var(--darkgrey);
+    color: var(--white);
+  }
+
+  .button:hover svg path {
+    fill: var(--white);
+    stroke: var(--white);
+  }
+
+  video+button[action="video.play"]:hover::before {
+    opacity: 0.3;
+  }
+
+  video+button[action="video.play"]:hover::after {
+    transform: scale(1.1);
+  }
+
+  section.faqs accordion-container div.faq-section accordion-element:hover {
+    background-color: var(--lightgrey);
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"] svg:last-child path {
+    stroke: none;
+    transition: fill 0.2s;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"]:hover svg:last-child path {
+    stroke: none;
+  }
+}
+
+section#cart div.container {
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+
+section#cart div.overlay-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 200px;
+  opacity: 1;
+}
+
+section#cart #cart-heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+section#cart #cart-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  width: 100%;
+}
+
+section#cart #cart-container ul#cart-items {
+  padding: 0 var(--margin);
+  width: 100%;
+}
+
+section#cart #cart-container ul#cart-items li {
+  border-bottom: 1px solid var(--border);
+}
+
+section#cart #cart-container ul#cart-items li div.item-container {
+  align-items: stretch;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container figure {
+  margin-right: var(--gutter);
+  width: var(--image-width);
+}
+
+section#cart #cart-container ul#cart-items li div.item-container figure img {
+  aspect-ratio: 1;
+  height: var(--image-width);
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type>div:first-child strong:not(:last-child) {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type>div:first-child p::before {
+  content: "Size: ";
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity button[action="cart.item.quantity"] {
+  align-items: center;
+  display: flex;
+  height: var(--button-height);
+  justify-content: center;
+  width: var(--button-height);
+}
+
+section#cart #cart-container ul#cart-items li div.item-container>div:last-of-type {
+  align-items: flex-end;
+  flex: 1;
+}
+
+section#cart div#cart-totals {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--margin);
+  text-align: right;
+  width: 100%;
+}
+
+section#cart div#cart-totals h3 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+section#cart div#cart-checkout {
+  display: flex;
+  padding: 0 var(--margin);
+  width: 100%;
+}
+
+section#cart div#cart-checkout a {
+  font-weight: 500;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+section#cart #cart-container #empty-cart {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  padding: 0 var(--margin);
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+
+section#cart #cart-container #empty-cart a {
+  height: 4rem;
+  line-height: 4rem;
+}
+
+section#cart #cart-container ul#cart-items li.remove {
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: height 0.5s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+section#cart.empty #cart-container div#cart-checkout,
+section#cart.empty #cart-container ul,
+section#cart.empty #cart-container ul+div {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+section#cart.empty #cart-container #empty-cart {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s cubic-bezier(0.65, 0, 0.35, 1) 0.2s;
+}
+
+@media all and (max-width: 767.9px) {
+  #tequila-container {
+    padding-bottom: var(--bar-height);
+  }
+
+  section#tequila-bar {
+    bottom: 0;
+    position: fixed;
+    transform: translateY(100%);
+  }
+
+  section#tequila-bar div.container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  section#tequila-bar figure,
+  section#tequila-bar figure+div p,
+  section.tequila-highlights div.splide div.splide__arrows {
+    display: none;
+  }
+
+  section#tequila-bar figure+div h2,
+  section.tequila-highlights div.splide ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#tequila-bar figure+div h2 span::before {
+    content: "Tequila ";
+  }
+
+  section#tequila-bar figure+div h2 * {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  section#tequila-bar.lock {
+    position: absolute;
+  }
+
+  section#tequila-bar.reveal {
+    transform: translateY(0);
+    transition: transform 0.4s;
+  }
+
+  section.tequila-highlights {
+    border-top: 1px solid var(--black);
+  }
+
+  section.tequila-highlights h2 {
+    flex-wrap: wrap;
+  }
+
+  section.tequila-highlights h2 reveal-outer:last-child {
+    padding-top: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  section.tequila-highlights div.splide ul li {
+    padding: 5rem calc(var(--margin) * 2);
+  }
+
+  section.tequila-highlights div.splide ul li:not(:last-child) {
+    border-bottom: 1px solid var(--black);
+  }
+
+  section.tequila-highlights div.splide ul li figure {
+    margin-bottom: 2.5rem;
+  }
+
+  section.tequila-message h2 {
+    border-bottom: 1px solid var(--black);
+    padding: 7rem var(--margin);
+  }
+
+  section.tequila-message div.body {
+    padding: 5rem var(--margin);
+  }
+
+  section#tequila-cta div.container {
+    --padding-top: 4rem;
+  }
+
+  section#tequila-cta div.container div h2,
+  section#tequila-cta div.container div p {
+    margin-bottom: 1.5rem;
+  }
+
+  section#merch h1+a {
+    margin-top: 2.5rem;
+  }
+
+  section#merch ul.expandable {
+    flex-direction: column;
+  }
+
+  section#merch ul.expandable>li figure,
+  section#merch ul.expandable>li figure img {
+    height: calc(var(--width) * 1.03);
+  }
+
+  section#merch ul.expandable>li figure div.image-container {
+    pointer-events: none;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom {
+    bottom: 1.6rem;
+    gap: 1.2rem;
+    right: 1.6rem;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action^="product.gallery"] {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action^="product.gallery"] svg {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"] svg:first-child {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"] svg:last-child {
+    --zoom-height: 1.2rem;
+  }
+
+  section#merch ul.expandable>li div.details-container div.details {
+    max-height: calc(100% - 4rem);
+    padding: 2.5rem calc(var(--margin) + var(--col3)) 2rem var(--margin);
+  }
+
+  section#merch ul.expandable>li div.details-container div.details div.detail,
+  section#merch ul.expandable>li div.details-container div.details div.sizes {
+    margin-bottom: 2rem;
+  }
+
+  section#merch ul.expandable>li div.details-container div.details strong[product="price"] {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  section#merch ul.expandable>li div.details-container div.details form {
+    position: relative;
+    width: var(--grid);
+  }
+
+  section#merch ul.expandable>li div.details-container div.details div.quantity button[action="cart.add"] {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 15rem;
+  }
+
+  section#merch ul.expandable>li.zooming figure,
+  section#merch ul.expandable>li.zooming figure img {
+    transition: height 0.4s;
+  }
+
+  section#merch ul.expandable>li.zoom figure,
+  section#merch ul.expandable>li.zoom figure img {
+    height: calc(var(--vhF100) - var(--header) - var(--product-title-bar));
+  }
+
+  section#merch ul.expandable>li.zoom figure div.image-zoom button[action^="product.gallery"] {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  section#cart div#cart-checkout a[cart-checkout],
+  section#cart div.container {
+    width: 100%;
+  }
+
+  section#cart div#cart-heading {
+    padding: 1.5rem var(--margin);
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity button[action="cart.item.quantity"] svg,
+  section#cart div#cart-heading button[action="cart.close"] svg {
+    height: 1.2rem;
+  }
+
+  section#cart #cart-container ul#cart-items {
+    margin-bottom: 5rem;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container {
+    padding: 2.5rem 0;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container figure {
+    --image-width: var(--col4-g);
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity {
+    width: 11.3rem;
+    --button-height: 3rem;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity label {
+    font-size: 1.2rem;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type {
+    width: var(--col5-g);
+  }
+
+  section#cart #cart-container #empty-cart p,
+  section#cart div#cart-totals {
+    margin-bottom: 3rem;
+  }
+
+  section#cart div#cart-checkout {
+    padding-bottom: 2rem;
+  }
+
+  section#cart #cart-container #empty-cart a {
+    width: var(--col6-g);
+  }
+
+  section#legal {
+    padding-bottom: 10rem;
+  }
+
+  section#legal h1 reveal-outer:nth-child(3) {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900.9px) {
+  section#tequilas-awards div.splide ul li figure img {
+    height: 18rem;
+  }
+
+  section.tequila-hero div.gallery-container {
+    height: calc(var(--vhF100) - var(--header));
+    overflow: hidden;
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure {
+    --bottle-height: calc(var(--vhF100) - 33rem);
+    --bottle-top: calc(22rem - var(--header));
+  }
+
+  section.tequila-hero div.gallery-container div.gallery-controls {
+    bottom: 3rem;
+    position: absolute;
+  }
+
+  section.tequila-message div.body>div {
+    width: var(--col9);
+  }
+
+  section#cart div.container {
+    width: 50rem;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container figure {
+    --image-width: var(--col5-g);
+  }
+}
+
+@media all and (min-width: 901px) {
+
+  section#tequila-bar figure+div p,
+  section#tequilas-testimonials div.body {
+    width: var(--col9-g);
+  }
+
+  section#tequilas-awards div.splide ul li figure img {
+    height: 23.6rem;
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure {
+    --bottle-height: calc(var(--vhF100) - 20rem);
+    --bottle-top: calc(14rem - var(--header));
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure:first-child img:first-child {
+    left: 0;
+  }
+
+  section.tequila-hero div.gallery-container div.gallery-controls {
+    bottom: var(--margin);
+  }
+
+  section.tequila-hero:not(.lock) div.gallery-container div.gallery-controls {
+    position: fixed;
+    top: var(--header);
+  }
+
+  section.tequila-hero.lock div.gallery-container div.gallery-controls {
+    position: absolute;
+  }
+
+  #tequila-container {
+    padding-top: var(--bar-height);
+  }
+
+  section#tequila-bar form {
+    display: flex;
+    gap: 3rem;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  section#tequila-bar form div.quantity {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15rem;
+  }
+
+  section#tequila-bar form div.quantity label {
+    align-items: center;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  section#tequila-bar form div.quantity button[action="tequila.quantity"] {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+  }
+
+  section#tequila-bar form div.quantity button[action="tequila.quantity"] svg {
+    height: 1.3rem;
+    transition: opacity 0.4s;
+  }
+
+  section#tequila-bar form div.quantity[data-quantity="1"] button[action="tequila.quantity"]:first-child {
+    pointer-events: none;
+  }
+
+  section#tequila-bar form div.quantity[data-quantity="1"] button[action="tequila.quantity"]:first-child svg {
+    opacity: 0.3;
+  }
+
+  section.tequila-message div.body>div {
+    width: var(--col8);
+  }
+
+  section#cart div.container {
+    width: 50%;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container figure {
+    --image-width: var(--col3-g);
+  }
+}
+
+section#legal h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section#legal div.body em {
+  font-style: italic;
+}
+
+@media all and (min-width: 768px) {
+  section.homepage-tequila div.heading {
+    min-height: calc(6rem + var(--h1-line-height));
+  }
+
+  section.homepage-tequila h2,
+  section.tequila-hero div.heading .h1 {
+    justify-content: space-between;
+  }
+
+  section.homepage-tequila div.tequila-text {
+    align-items: flex-end;
+    margin-left: auto;
+    padding-top: 3rem;
+    text-align: right;
+  }
+
+  section.homepage-tequila div.tequila-text p span,
+  section.tequila-hero div.tequila-text p span {
+    display: block;
+  }
+
+  section#tequila-cta div.container div h2,
+  section.homepage-tequila div.tequila-text p span:first-child,
+  section.tequila-hero div.tequila-text p span:first-child {
+    margin-bottom: 2rem;
+  }
+
+  div.card#card-reposado {
+    background: 0 0;
+    height: calc((var(--vhF100) - var(--header)) * 1.5);
+  }
+
+  section.homepage-tequila#homepage-reposado figure {
+    top: calc(14rem - var(--header));
+  }
+
+  section.homepage-tequila#homepage-reposado figure img {
+    height: calc(var(--vhF100) - 20rem);
+  }
+
+  section#about-hero h1 strong:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section#about-hero h1 strong:first-child reveal-outer:last-child {
+    align-self: flex-end;
+  }
+
+  section#about-hero h1 strong:last-child,
+  section#tequilas-awards div.splide:not(.is-active) div.splide__arrows,
+  section.tequila-highlights div.splide:not(.is-active) div.splide__arrows {
+    display: none;
+  }
+
+  section#about-hero div.container {
+    float: left;
+    width: 100%;
+  }
+
+  section#about-hero figure {
+    clear: both;
+  }
+
+  section#about-story div.container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    --padding-top: 10rem;
+    --padding-margin: calc(var(--margin) + var(--col1));
+  }
+
+  section#about-story h2 {
+    flex: 1;
+  }
+
+  section#tequilas-hero {
+    align-items: stretch;
+    display: flex;
+  }
+
+  section#tequilas-hero div.tequila {
+    width: 50%;
+  }
+
+  section#tequilas-hero div.tequila a div {
+    display: flex;
+    padding: 3rem 3rem 6rem;
+  }
+
+  section#tequilas-hero div.tequila a div strong {
+    width: 100%;
+  }
+
+  section#tequilas-hero div.tequila:first-child a div {
+    padding-left: max(var(--margin), 3rem);
+  }
+
+  section#tequilas-hero div.tequila:last-child::before {
+    border-right: 1px solid var(--black);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+  }
+
+  section#tequilas-hero div.tequila:last-child a div {
+    padding-right: max(var(--margin), 3rem);
+  }
+
+  section#tequilas-testimonials div.container {
+    --padding-top: 10rem;
+    --padding-bottom: 14rem;
+    --padding-margin: 0;
+  }
+
+  section#tequilas-testimonials div.container::after,
+  section.tequila-message::after {
+    border-right: 1px solid var(--black);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
+
+  section#tequilas-testimonials div.body {
+    left: var(--margin);
+    padding: 10rem 0 14rem;
+    position: absolute;
+  }
+
+  section#tequilas-testimonials ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-top: 4rem;
+    width: 50%;
+  }
+
+  section#tequilas-testimonials ul li:not(:last-child) {
+    margin-bottom: 12rem;
+  }
+
+  section#tequilas-testimonials ul li blockquote,
+  section#tequilas-testimonials ul li svg {
+    margin-bottom: 3rem;
+  }
+
+  section#tequilas-awards div.splide {
+    overflow: visible;
+  }
+
+  section#tequilas-awards div.splide ul li {
+    justify-content: center;
+    padding: 10rem var(--margin);
+    width: calc(var(--vw100) / 2);
+  }
+
+  section#cart #cart-container #empty-cart p,
+  section#tequilas-awards div.splide ul li figure {
+    margin-bottom: 6rem;
+  }
+
+  section#tequilas-awards div.splide ul li p {
+    width: var(--col7);
+  }
+
+  section#tequilas-awards div.splide div.splide__arrows {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    right: var(--margin);
+    top: -3rem;
+    transform: translateY(-100%);
+    z-index: 4;
+  }
+
+  section#tequilas-awards div.splide div.splide__arrows button,
+  section.tequila-hero div.tequila-text form div.quantity button[action="tequila.quantity"] {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+  }
+
+  section#tequilas-awards div.splide div.splide__arrows button svg {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  section#tequilas-awards div.splide div.splide__arrows button:first-child svg {
+    transform: scaleX(-1);
+  }
+
+  section#merch ul.expandable>li:nth-child(odd),
+  section#tequilas-awards div.splide.is-active ul li,
+  section#tequilas-awards div.splide:not(.is-active) ul li:not(:last-child),
+  section.tequila-highlights div.splide.is-active ul li {
+    border-right: 1px solid var(--black);
+  }
+
+  section#tequilas-awards div.splide:not(.is-active) ul,
+  section.tequila-highlights div.splide:not(.is-active) ul {
+    justify-content: center;
+  }
+
+  section.tequila-hero div.gallery-container div.gallery figure img:last-child:not(:only-child) {
+    --y: calc(var(--bottle-top) - var(--top-margin));
+    --background-height: calc((var(--bottle-height)) * 1.7);
+    --top-margin: calc((var(--background-height) - var(--bottle-height)) / 2);
+  }
+
+  section.tequila-hero div.gallery-container div.gallery-controls {
+    align-items: flex-end;
+    gap: 1.6rem;
+    justify-content: center;
+    right: var(--margin);
+  }
+
+  section.tequila-hero div.tequila-text {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(6rem + var(--h1-line-height) + 3rem);
+    right: 0;
+    text-align: right;
+    z-index: 4;
+    --animation-delay: 0.3s;
+  }
+
+  section.tequila-hero div.tequila-text p {
+    margin-bottom: 2.5rem;
+  }
+
+  section.tequila-hero div.tequila-text p+strong {
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+
+  section.tequila-hero div.tequila-text form {
+    color: var(--black);
+  }
+
+  section.tequila-hero div.tequila-text form div.quantity {
+    display: flex;
+    flex-wrap: wrap;
+    width: 15rem;
+  }
+
+  section.tequila-hero div.tequila-text form div.quantity label {
+    align-items: center;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+
+  section.tequila-hero div.tequila-text form div.quantity button[action="tequila.quantity"] svg {
+    height: 1.3rem;
+    transition: opacity 0.4s;
+  }
+
+  section.tequila-hero div.tequila-text form div.quantity[data-quantity="1"] button[action="tequila.quantity"]:first-child {
+    pointer-events: none;
+  }
+
+  section.tequila-hero div.tequila-text form div.quantity[data-quantity="1"] button[action="tequila.quantity"]:first-child svg {
+    opacity: 0.3;
+  }
+
+  section.tequila-hero div.tequila-text form div.quantity button[action="cart.add"] {
+    height: 4rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  section#tequila-bar {
+    top: 0;
+  }
+
+  section#tequila-bar div.container {
+    align-items: center;
+  }
+
+  section#tequila-bar figure img {
+    border: 1px solid var(--border);
+    margin-right: 3rem;
+    width: 12rem;
+  }
+
+  section#tequila-bar figure+div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  section#tequila-bar figure+div h2 {
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section#tequila-bar figure+div h2 small {
+    position: relative;
+    top: -0.15rem;
+  }
+
+  section#tequila-bar.sticky {
+    position: fixed;
+    top: var(--header);
+  }
+
+  section#tequila-bar.sticky:not(.lock) {
+    border-top: none;
+  }
+
+  section#tequila-bar.sticky.lock {
+    bottom: 0;
+    position: absolute;
+    top: auto;
+  }
+
+  section.tequila-highlights div.splide ul li {
+    justify-content: flex-start;
+    padding: 10rem var(--margin);
+    width: calc(var(--vw100) / 3);
+  }
+
+  section.tequila-highlights div.splide ul li figure {
+    margin-bottom: 5rem;
+  }
+
+  section.tequila-highlights div.splide ul li figure img {
+    --width: var(--col4-g);
+  }
+
+  section.tequila-highlights div.splide ul li p {
+    width: var(--col6-g);
+  }
+
+  section.tequila-highlights div.splide div.splide__arrows {
+    bottom: 3rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+  }
+
+  section.tequila-highlights div.splide div.splide__arrows button {
+    align-items: center;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    pointer-events: auto;
+    width: 4rem;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action^="product.gallery"] svg,
+  section.tequila-highlights div.splide div.splide__arrows button svg {
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  section.tequila-highlights div.splide div.splide__arrows button:first-child svg {
+    transform: scaleX(-1);
+  }
+
+  section.tequila-highlights div.splide:not(.is-active) ul li:not(:first-child) {
+    border-left: 1px solid var(--black);
+  }
+
+  section.tequila-message {
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  section.tequila-message div.body,
+  section.tequila-message h2 {
+    flex: 1;
+    padding: 14rem var(--margin);
+  }
+
+  section.tequila-message div.body {
+    display: flex;
+    justify-content: center;
+  }
+
+  section#tequila-cta div.container {
+    --padding-top: 6rem;
+  }
+
+  section#cart div#cart-totals,
+  section#tequila-cta div.container div p {
+    margin-bottom: 4rem;
+  }
+
+  section#merch ul.expandable {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  section#merch ul.expandable>li {
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(var(--vw100) / 2);
+    --width: calc(var(--vw100) / 2);
+  }
+
+  section#merch ul.expandable>li:not(:last-child) {
+    border-bottom: 1px solid var(--black);
+  }
+
+  section#merch ul.expandable>li:nth-child(odd):nth-last-child(2) {
+    border-bottom: none;
+  }
+
+  section#merch ul.expandable>li div.details-container {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    transition: max-width 0.4s, width 0.4s;
+    width: var(--width);
+  }
+
+  section#merch ul.expandable>li figure {
+    height: var(--width);
+    --height: calc(var(--vw100) / 2);
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom {
+    bottom: 2rem;
+    gap: 1.6rem;
+    right: 2rem;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action^="product.gallery"] {
+    opacity: 0;
+    pointer-events: none;
+    transition: background-color 0.2s, border-color 0.2s, opacity 0.4s;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"] svg:first-child {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  section#merch ul.expandable>li figure div.image-zoom button[action="product.zoom"] svg:last-child {
+    --zoom-height: 1.6rem;
+  }
+
+  section#merch ul.expandable>li div.details-container div.details {
+    max-height: calc(100% - 6rem);
+    padding: 3rem 0 2.5rem 2rem;
+  }
+
+  section#merch ul.expandable>li div.details-container div.details div.detail {
+    min-height: calc(2.5rem + 2rem + 2rem + 4rem);
+    width: var(--col6);
+  }
+
+  section#merch ul.expandable>li div.details-container div.details strong[product="price"] {
+    position: absolute;
+    right: 2.5rem;
+    top: 3rem;
+  }
+
+  section#merch ul.expandable>li div.details-container div.details div.quantity {
+    bottom: 2.5rem;
+    position: absolute;
+    right: 2.5rem;
+  }
+
+  section#merch ul.expandable>li button[action="details.toggle"] {
+    transition: width 0.4s;
+  }
+
+  section#merch ul.expandable>li:nth-child(2n) button[action="details.toggle"],
+  section#merch ul.expandable>li:nth-child(2n) div.details-container {
+    right: 0;
+  }
+
+  section#merch ul.expandable>li:is(.zoom, .zooming),
+  section#merch ul.expandable>li:is(.zoom, .zooming) button[action="details.toggle"],
+  section#merch ul.expandable>li:is(.zoom, .zooming) div.details-container {
+    z-index: 14;
+  }
+
+  section#merch ul.expandable>li:is(.zoom, .zooming) button[action="details.toggle"] {
+    position: absolute;
+  }
+
+  section#merch ul.expandable>li.zoom button[action="details.toggle"],
+  section#merch ul.expandable>li.zoom div.details-container {
+    max-width: var(--vw100);
+    width: var(--vw100);
+  }
+
+  section#merch ul.expandable>li.zoom figure div.image-zoom,
+  section#merch ul.expandable>li.zoom figure div.image-zoom button[action^="product.gallery"] {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @supports not (-webkit-touch-callout: none) {
+    section#merch ul.expandable>li figure div.image-zoom {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s;
+    }
+
+    section#merch ul.expandable>li:not(.active) figure:hover div.image-zoom {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  section#cart div#cart-heading {
+    padding: 4rem var(--margin) 2rem;
+  }
+
+  section#cart div#cart-heading button[action="cart.close"] svg {
+    height: 2.4rem;
+  }
+
+  section#cart #cart-container ul#cart-items {
+    margin-bottom: 10rem;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container {
+    padding: 3rem 0;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type {
+    width: var(--col7-g);
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity {
+    width: 15rem;
+    --button-height: 4rem;
+  }
+
+  section#cart #cart-container ul#cart-items li div.item-container>div:first-of-type div.quantity button[action="cart.item.quantity"] svg {
+    height: 1.3rem;
+  }
+
+  section#cart div#cart-checkout {
+    justify-content: flex-end;
+    padding-bottom: 4rem;
+  }
+
+  section#cart div#cart-checkout a[cart-checkout] {
+    min-width: var(--col4-g);
+  }
+
+  section#cart #cart-container #empty-cart a {
+    width: var(--col3);
+  }
+
+  section#legal {
+    padding-bottom: 7rem;
+  }
+
+  section#legal h1 reveal-outer:nth-child(3) {
+    text-align: center;
+    width: 100%;
+  }
+
+  section#legal div.container:last-child {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199.9px) {
+
+  section.homepage-tequila div.tequila-text,
+  section.tequila-hero div.tequila-text {
+    width: calc((var(--margin) * 2) + var(--col7-g));
+  }
+
+  section.homepage-tequila div.tequila-text p span,
+  section.tequila-hero div.tequila-text p span {
+    white-space: normal;
+  }
+
+  section#tequilas-hero div.tequila a div {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  section#tequilas-hero div.tequila a div p,
+  section#tequilas-hero div.tequila a div strong {
+    margin-bottom: 2rem;
+  }
+
+  section#legal div.body {
+    width: var(--col12);
+  }
+}
+
+@media all and (min-width: 1200px) {
+  #_laptop_lg_desktop {
+    display: block;
+  }
+
+  section.social>div.splide ul li {
+    --width: 41rem;
+  }
+
+  section#homepage-hero h1 {
+    max-width: 160rem;
+  }
+
+  section#tequilas-hero div.tequila a div {
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section#tequilas-hero div.tequila a div strong {
+    margin-bottom: 4rem;
+  }
+
+  section#tequilas-hero div.tequila a div p {
+    width: var(--col6g);
+  }
+
+  section#tequilas-testimonials ul li {
+    width: var(--col8-g);
+  }
+
+  section#legal div.body {
+    width: var(--col10);
+  }
+}
+
+section#four04 div.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(var(--vhF100) - var(--header));
+  justify-content: center;
+  text-align: center;
+}
+
+section#four04 h1 {
+  font-size: 23rem;
+  position: relative;
+}
+
+section#four04 h1 span {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#four04 h1 img {
+  position: relative;
+  width: 22rem;
+  top: -2rem;
+  z-index: 4;
+}
+
+section#four04 a {
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.splide__container,
+.splide__slide {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.splide__list {
+  backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.splide__pagination {
+  -ms-flex-align: center;
+  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  pointer-events: none;
+}
+
+.splide__pagination li {
+  display: inline-block;
+  line-height: 1;
+  list-style-type: none;
+  margin: 0;
+  pointer-events: auto;
+}
+
+.splide:not(.is-overflow) .splide__pagination,
+.splide__toggle.is-active .splide__toggle__play,
+.splide__toggle__pause {
+  display: none;
+}
+
+.splide__progress__bar {
+  width: 0;
+}
+
+.splide {
+  position: relative;
+}
+
+.splide.is-initialized,
+.splide.is-rendered {
+  visibility: visible;
+}
+
+.splide__slide {
+  backface-visibility: hidden;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  list-style-type: none !important;
+  margin: 0;
+}
+
+.splide__slide img {
+  vertical-align: bottom;
+}
+
+.splide__spinner {
+  animation: 1s linear infinite splide-loading;
+  border: 2px solid #999;
+  border-left-color: transparent;
+  border-radius: 50%;
+  bottom: 0;
+  contain: strict;
+  display: inline-block;
+  height: 20px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+}
+
+.splide__sr {
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.splide__toggle.is-active .splide__toggle__pause {
+  display: inline;
+}
+
+.splide__track {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+@keyframes splide-loading {
+  0% {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.splide__track--draggable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.splide__track--fade>.splide__list>.splide__slide {
+  margin: 0 !important;
+  opacity: 0;
+  z-index: 0;
+}
+
+.splide__track--fade>.splide__list>.splide__slide.is-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.splide--rtl {
+  direction: rtl;
+}
+
+.splide__track--ttb>.splide__list {
+  display: block;
+}
+
+.splide__arrow:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.splide__arrow:disabled {
+  opacity: 0.5;
+}
+
+.splide__arrow--prev svg {
+  transform: scaleX(-1);
+}
+
+.splide__pagination {
+  bottom: 0.5em;
+  left: 0;
+  padding: 0 1em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.splide__pagination__page {
+  background: #ccc;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 8px;
+  margin: 3px;
+  opacity: 0.7;
+  padding: 0;
+  position: relative;
+  transition: transform 0.2s linear;
+  width: 8px;
+}
+
+.splide__pagination__page.is-active {
+  background: #fff;
+  transform: scale(1.4);
+  z-index: 1;
+}
+
+.splide__pagination__page:hover {
+  opacity: 0.9;
+}
+
+.splide__pagination__page:focus-visible {
+  outline: #0bf solid 3px;
+  outline-offset: 3px;
+}
+
+.splide.is-focus-in .splide__pagination__page:focus {
+  outline: #0bf solid 3px;
+  outline-offset: 3px;
+}
+
+.splide__progress__bar {
+  background: #ccc;
+  height: 3px;
+}
+
+.splide__slide:focus {
+  outline: 0;
+}
+
+@supports (outline-offset: -3px) {
+  .splide__slide:focus-visible {
+    outline: #0bf solid 3px;
+    outline-offset: -3px;
+  }
+
+  .splide.is-focus-in .splide__slide:focus {
+    outline: #0bf solid 3px;
+    outline-offset: -3px;
+  }
+}
+
+@media screen and (-ms-high-contrast: none) {
+  .splide__slide:focus-visible {
+    border: 3px solid #0bf;
+  }
+
+  .splide.is-focus-in .splide__slide:focus {
+    border: 3px solid #0bf;
+  }
+
+  .splide.is-focus-in .splide__track>.splide__list>.splide__slide:focus {
+    border-color: #0bf;
+  }
+}
+
+.splide__toggle:focus-visible {
+  outline: #0bf solid 3px;
+  outline-offset: 3px;
+}
+
+.splide.is-focus-in .splide__toggle:focus {
+  outline: #0bf solid 3px;
+  outline-offset: 3px;
+}
+
+.splide__track--nav>.splide__list>.splide__slide {
+  border: 3px solid transparent;
+  cursor: pointer;
+}
+
+.splide__track--nav>.splide__list>.splide__slide.is-active {
+  border: 3px solid #000;
+}
+
+.splide__pagination--ttb {
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  left: auto;
+  padding: 1em 0;
+  right: 0.5em;
+  top: 0;
+}
